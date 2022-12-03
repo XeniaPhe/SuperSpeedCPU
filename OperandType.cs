@@ -1,5 +1,6 @@
 ﻿internal enum OperandType
 {
     Register,
-    Immediate
+    Immediate,
+    ExtraBits
 }

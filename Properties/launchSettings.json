@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SSCPU": {
+      "commandName": "Project",
+      "commandLineArgs": "input.txt\r\noutput.txt"
+    }
+  }
+}
