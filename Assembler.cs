@@ -74,7 +74,6 @@ namespace SSCPU
                         }
                         else
                         {
-                            Console.WriteLine("lol");
                             return null;
                         }
                     }
@@ -101,7 +100,6 @@ namespace SSCPU
                     }
                     else if(extensionBits < 0)
                     {
-                        Console.WriteLine("fuck you");
                         return null;
                     }
 
