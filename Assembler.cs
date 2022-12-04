@@ -103,24 +103,28 @@ namespace SSCPU
                         return null;
                     }
 
-                    currentInstruction.AddRegister(register);
+                    if (!currentInstruction.AddRegister(register))
+                        return null;
                 }
                 else if (op.StartsWith("0x"))
                 {
-                    int immediateValue = Convert.ToInt32(op, 16);
-                    currentInstruction.AddImmediate(immediateValue);
+                    int immediateValue = Convert.ToInt32(op, 16);                 
+                    if (!currentInstruction.AddImmediate(immediateValue))
+                        return null;
                 }
                 else if (op.StartsWith("0b"))
                 {
                     StringBuilder temp = new StringBuilder(op);
                     temp.Remove(0, 2);
                     int immediateValue = Convert.ToInt32(temp.ToString(), 2);
-                    currentInstruction.AddImmediate(immediateValue);
+                    if (!currentInstruction.AddImmediate(immediateValue))
+                        return null;
                 }
                 else
                 {
                     int immediateValue = Convert.ToInt32(op);
-                    currentInstruction.AddImmediate(immediateValue);
+                    if (!currentInstruction.AddImmediate(immediateValue))
+                        return null;
                 }
             }
 
