@@ -10,6 +10,8 @@ namespace SSCPU
         private List<OperandType> operands;
         private StringBuilder assembledInstruction;
 
+        internal string Opcode => rule.OpcodeASCII;
+
         internal Instruction(InstructionRule rule)
         {
             this.rule = rule;

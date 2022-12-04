@@ -7,8 +7,9 @@ namespace SSCPU
 {
     internal class Assembler
     {
+        private static Instruction currentInstruction = null;
+        private static int lineCounter = 0;
 
-        static readonly Regex whiteSpaceRegex = new Regex("\\s+");
         static void Main(string[] args)
         {
             if (args.Length != 2)
@@ -24,7 +25,6 @@ namespace SSCPU
             }
 
             string[] ops = ReadInputFile(args[0]);
-
             string machineCode = "";
 
             try
@@ -32,14 +32,11 @@ namespace SSCPU
                 machineCode = Assemble(ops);
 
                 if (machineCode is null)
-                {
-                    Console.WriteLine("Instruction Error");
                     return;
-                }
             }
             catch (Exception)
             {
-                Console.WriteLine("Instruction Error");
+                PrintError("Number Error!");
                 return;
             }
 
@@ -51,6 +48,7 @@ namespace SSCPU
         {
             using (StreamReader reader = new StreamReader(file))
             {
+                Regex whiteSpaceRegex = new Regex("\\s+");
                 string fileContents = reader.ReadToEnd();
                 return whiteSpaceRegex.Split(fileContents);
             }
@@ -59,26 +57,30 @@ namespace SSCPU
         static string Assemble(string[] ops)
         {
             StringBuilder assembler = new StringBuilder();
-            Instruction currentInstruction = null;
+
+
             InstructionRule currentInstructionRule = null;
+
 
             foreach (var op in ops)
             {
                 if ((currentInstructionRule = InstructionRule.GetInstruction(op)) is not null)
                 {
-                    if(currentInstruction is not null)
+                    if (currentInstruction is not null)
                     {
-                        if(currentInstruction.IsInstructionComplete())
+                        if (currentInstruction.IsInstructionComplete())
                         {
                             assembler.AppendLine(currentInstruction.ToString());
                         }
                         else
                         {
+                            PrintError("Instruction is not Complete!");
                             return null;
                         }
                     }
 
                     currentInstruction = new Instruction(currentInstructionRule);
+                    lineCounter++;
                 }
                 else if (op.StartsWith('R'))
                 {
@@ -86,7 +88,7 @@ namespace SSCPU
                     string register = Convert.ToString(registerNo, 2);
                     int extensionBits = 4 - register.Length;
 
-                    if(extensionBits > 0)
+                    if (extensionBits > 0)
                     {
                         StringBuilder reg = new StringBuilder();
 
@@ -98,39 +100,71 @@ namespace SSCPU
                         reg.Append(register);
                         register = reg.ToString();
                     }
-                    else if(extensionBits < 0)
+                    else if (extensionBits < 0)
                     {
+                        PrintError("Unknown register!");
                         return null;
                     }
 
                     if (!currentInstruction.AddRegister(register))
+                    {
+                        PrintError("Invalid instruction order!");
                         return null;
+                    }
                 }
                 else if (op.StartsWith("0x"))
                 {
-                    int immediateValue = Convert.ToInt32(op, 16);                 
+                    int immediateValue = Convert.ToInt32(op, 16);
+
+                    if (op[0] >= '8')
+                    {
+                        immediateValue -= 2 * (1 << (4 * op.Length - 1));
+                    }
+
                     if (!currentInstruction.AddImmediate(immediateValue))
+                    {
+                        PrintError("Immediate error!");
                         return null;
+                    }
                 }
                 else if (op.StartsWith("0b"))
                 {
                     StringBuilder temp = new StringBuilder(op);
                     temp.Remove(0, 2);
                     int immediateValue = Convert.ToInt32(temp.ToString(), 2);
+
+                    if (temp[0] == '1')
+                    {
+                        immediateValue -= 2 * (1 << (temp.Length - 1));
+                    }
+
                     if (!currentInstruction.AddImmediate(immediateValue))
+                    {
+                        PrintError("Immediate error!");
                         return null;
+                    }
                 }
                 else
                 {
                     int immediateValue = Convert.ToInt32(op);
+
                     if (!currentInstruction.AddImmediate(immediateValue))
+                    {
+                        PrintError("Immediate error!");
                         return null;
+                    }
                 }
             }
 
             assembler.AppendLine(currentInstruction.ToString());
-
             return assembler.ToString();
+        }
+        private static void PrintError(string error)
+        {
+            Console.WriteLine($"Error : {error}");
+            Console.WriteLine("Error Details : ");
+            Console.WriteLine($"At Line {lineCounter}");
+            Console.WriteLine($"At Instruction {currentInstruction.Opcode}");
         }
 
         static void WriteToOutputFile(string file, string content)
