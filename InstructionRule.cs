@@ -15,24 +15,28 @@ namespace SSCPU
         private List<OperandType> operands;
         private int immediateLength;
         private int extraBitCount;
+        private bool isImmediateSigned;
 
 
         internal string OpcodeASCII => opcodeASCII;
         internal string OpCodeBinary => opcodeBinary;
         internal int ImmediateLength => immediateLength;
         internal int ExtraBitCount => extraBitCount;
-        internal int MinImmediate => immediateLength > 0 ? -1 << (immediateLength - 1) : 0;
-        internal int MaxImmediate => immediateLength > 0 ? (1 << (immediateLength - 1)) - 1 : 0;
+
+        internal bool IsImmediateSigned => isImmediateSigned;
+        internal int MinImmediate => (immediateLength > 0 && isImmediateSigned) ? -1 << (immediateLength - 1) : 0;
+        internal int MaxImmediate => immediateLength > 0 ? ( (isImmediateSigned) ? (1 << (immediateLength - 1)) - 1 : (1 << immediateLength) - 1 ) : 0;
 
 
         internal List<OperandType> Operands => operands;
 
 
-        private InstructionRule(string opcodeASCII, string opcodeBinary, List<OperandType> operands, int immediateLength = 0)
+        private InstructionRule(string opcodeASCII, string opcodeBinary, List<OperandType> operands, int immediateLength = 0, bool isImmediateSigned = true)
         {
             this.opcodeASCII = opcodeASCII;
             this.opcodeBinary = opcodeBinary;
             this.operands = operands;
+            this.isImmediateSigned= isImmediateSigned;
             this.immediateLength = operands.Contains(OperandType.Immediate) ? immediateLength : 0;
 
             extraBitCount = 15;
@@ -93,8 +97,8 @@ namespace SSCPU
             instructions.Add(new InstructionRule("ORI", "01000", operands, 7));
             instructions.Add(new InstructionRule("XORI", "01010", operands, 7));
 
-            instructions.Add(new InstructionRule("BE", "10000", operands, 7));
-            instructions.Add(new InstructionRule("BNE", "10001", operands, 7));
+            instructions.Add(new InstructionRule("BE", "10000", operands, 7, false));
+            instructions.Add(new InstructionRule("BNE", "10001", operands, 7, false));
 
 
             operands = new List<OperandType>()
@@ -104,8 +108,8 @@ namespace SSCPU
                 OperandType.Immediate
             };
 
-            instructions.Add(new InstructionRule("LD", "01011", operands, 10));
-            instructions.Add(new InstructionRule("ST", "01100", operands, 10));
+            instructions.Add(new InstructionRule("LD", "01011", operands, 10, false));
+            instructions.Add(new InstructionRule("ST", "01100", operands, 10, false));
 
             operands = new List<OperandType>()
             {
