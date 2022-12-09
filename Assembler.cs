@@ -10,7 +10,7 @@ namespace SSCPU
         private static Instruction currentInstruction = null;
         private static int lineCounter = 0;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             if (args.Length != 2)
             {
@@ -44,17 +44,7 @@ namespace SSCPU
             Console.WriteLine(machineCode);
         }
 
-        static string[] ReadInputFile(string file)
-        {
-            using (StreamReader reader = new StreamReader(file))
-            {
-                Regex whiteSpaceRegex = new Regex("\\s+");
-                string fileContents = reader.ReadToEnd();
-                return whiteSpaceRegex.Split(fileContents);
-            }
-        }
-
-        static string Assemble(string[] ops)
+        private static string Assemble(string[] ops)
         {
             StringBuilder assembler = new StringBuilder();
 
@@ -159,6 +149,7 @@ namespace SSCPU
             assembler.AppendLine(currentInstruction.ToString());
             return assembler.ToString();
         }
+
         private static void PrintError(string error)
         {
             Console.WriteLine($"Error : {error}");
@@ -167,7 +158,17 @@ namespace SSCPU
             Console.WriteLine($"At Instruction {currentInstruction.Opcode}");
         }
 
-        static void WriteToOutputFile(string file, string content)
+        private static string[] ReadInputFile(string file)
+        {
+            using (StreamReader reader = new StreamReader(file))
+            {
+                Regex whiteSpaceRegex = new Regex("\\s+");
+                string fileContents = reader.ReadToEnd();
+                return whiteSpaceRegex.Split(fileContents);
+            }
+        }
+
+        private static void WriteToOutputFile(string file, string content)
         {
             using (StreamWriter writer = new StreamWriter(file))
             {

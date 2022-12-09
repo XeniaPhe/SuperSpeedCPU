@@ -31,43 +31,6 @@ namespace SSCPU
         internal List<OperandType> Operands => operands;
 
 
-        private InstructionRule(string opcodeASCII, string opcodeBinary, List<OperandType> operands, int immediateLength = 0, bool isImmediateSigned = true)
-        {
-            this.opcodeASCII = opcodeASCII;
-            this.opcodeBinary = opcodeBinary;
-            this.operands = operands;
-            this.isImmediateSigned= isImmediateSigned;
-            this.immediateLength = operands.Contains(OperandType.Immediate) ? immediateLength : 0;
-
-            extraBitCount = 15;
-
-            foreach (var operand in operands)
-            {
-                switch (operand)
-                {
-                    case OperandType.Register:
-                        extraBitCount -= 4;
-                        break;
-                    case OperandType.Immediate:
-                        extraBitCount -= immediateLength;
-                        break;
-                }
-            }
-        }
-
-        internal string GetExtraBits()
-        {
-            StringBuilder extraBits = new StringBuilder();
-
-            for (int i = 0; i < extraBitCount; i++)
-            {
-                extraBits.Append("0");
-            }
-
-            return extraBits.ToString();
-        }
-
-
         static InstructionRule()
         {
             List<OperandType> operands = new List<OperandType>()
@@ -129,9 +92,45 @@ namespace SSCPU
             instructions.Add(new InstructionRule("JUMP", "01111", operands, 10));
         }
 
+        private InstructionRule(string opcodeASCII, string opcodeBinary, List<OperandType> operands, int immediateLength = 0, bool isImmediateSigned = true)
+        {
+            this.opcodeASCII = opcodeASCII;
+            this.opcodeBinary = opcodeBinary;
+            this.operands = operands;
+            this.isImmediateSigned= isImmediateSigned;
+            this.immediateLength = operands.Contains(OperandType.Immediate) ? immediateLength : 0;
+
+            extraBitCount = 15;
+
+            foreach (var operand in operands)
+            {
+                switch (operand)
+                {
+                    case OperandType.Register:
+                        extraBitCount -= 4;
+                        break;
+                    case OperandType.Immediate:
+                        extraBitCount -= immediateLength;
+                        break;
+                }
+            }
+        }
+
         internal static InstructionRule GetInstruction(string opcodeASCII)
         {
             return instructions.Where(i => i.opcodeASCII.Equals(opcodeASCII)).FirstOrDefault();
+        }
+
+        internal string GetExtraBits()
+        {
+            StringBuilder extraBits = new StringBuilder();
+
+            for (int i = 0; i < extraBitCount; i++)
+            {
+                extraBits.Append("0");
+            }
+
+            return extraBits.ToString();
         }
     }
 }
