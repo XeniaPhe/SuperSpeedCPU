@@ -60,6 +60,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="69" rx="10" ry="10" stroke="#000000" width="112" x="140" y="190"/>
+      <text font-family="SansSerif" font-size="20" text-anchor="middle" x="195" y="233">ADDER</text>
+      <circ-port height="8" pin="110,260" width="8" x="136" y="206"/>
+      <circ-port height="8" pin="110,490" width="8" x="136" y="236"/>
+      <circ-port height="10" pin="1250,1070" width="10" x="245" y="205"/>
+      <circ-port height="10" pin="830,1760" width="10" x="245" y="235"/>
+      <circ-anchor facing="east" height="6" width="6" x="247" y="207"/>
+    </appear>
     <wire from="(660,820)" to="(660,830)"/>
     <wire from="(660,1380)" to="(660,1390)"/>
     <wire from="(310,190)" to="(310,1470)"/>
@@ -256,44 +265,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(540,670)" to="(620,670)"/>
     <wire from="(420,1090)" to="(620,1090)"/>
     <wire from="(130,230)" to="(390,230)"/>
+    <comp lib="7" loc="(710,1560)" name="Full Adder"/>
     <comp lib="0" loc="(110,490)" name="Splitter">
       <a name="fanout" val="20"/>
       <a name="incoming" val="20"/>
       <a name="appear" val="center"/>
     </comp>
-    <comp lib="7" loc="(710,1420)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1140)" name="Full Adder"/>
-    <comp lib="7" loc="(710,510)" name="Full Adder"/>
-    <comp lib="0" loc="(110,490)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="N1"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(710,580)" name="Full Adder"/>
-    <comp lib="7" loc="(710,440)" name="Full Adder"/>
-    <comp lib="0" loc="(1250,1070)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="20"/>
-      <a name="incoming" val="20"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="7" loc="(710,1070)" name="Full Adder"/>
-    <comp lib="0" loc="(830,1760)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="O"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="7" loc="(710,1630)" name="Full Adder"/>
-    <comp lib="7" loc="(710,650)" name="Full Adder"/>
     <comp lib="7" loc="(710,720)" name="Full Adder"/>
-    <comp lib="7" loc="(710,860)" name="Full Adder"/>
-    <comp lib="7" loc="(710,930)" name="Full Adder"/>
-    <comp lib="0" loc="(660,280)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
     <comp lib="0" loc="(110,260)" name="Splitter">
       <a name="fanout" val="20"/>
       <a name="incoming" val="20"/>
@@ -319,7 +297,51 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit18" val="1"/>
       <a name="bit19" val="0"/>
     </comp>
-    <comp lib="7" loc="(710,1350)" name="Full Adder"/>
+    <comp lib="7" loc="(710,580)" name="Full Adder"/>
+    <comp lib="7" loc="(710,650)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1700)" name="Full Adder"/>
+    <comp lib="7" loc="(710,860)" name="Full Adder"/>
+    <comp lib="0" loc="(830,1760)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="O"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="7" loc="(710,370)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1420)" name="Full Adder"/>
+    <comp lib="0" loc="(660,280)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="7" loc="(710,1630)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1000)" name="Full Adder"/>
+    <comp lib="7" loc="(710,440)" name="Full Adder"/>
+    <comp lib="7" loc="(710,930)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1210)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1140)" name="Full Adder"/>
+    <comp lib="7" loc="(710,510)" name="Full Adder"/>
+    <comp lib="0" loc="(1250,1070)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="20"/>
+      <a name="incoming" val="20"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="0" loc="(110,490)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="N1"/>
+      <a name="labelfont" val="SansSerif bold 24"/>
+    </comp>
+    <comp lib="0" loc="(110,260)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="N0"/>
+      <a name="labelfont" val="SansSerif bold 24"/>
+    </comp>
+    <comp lib="7" loc="(710,790)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1070)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1280)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1490)" name="Full Adder"/>
     <comp lib="0" loc="(1250,1070)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -328,19 +350,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 24"/>
     </comp>
-    <comp lib="7" loc="(710,1210)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1560)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1700)" name="Full Adder"/>
-    <comp lib="7" loc="(710,370)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1000)" name="Full Adder"/>
-    <comp lib="0" loc="(110,260)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="N0"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(710,790)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1280)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1490)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1350)" name="Full Adder"/>
   </circuit>
 </project>

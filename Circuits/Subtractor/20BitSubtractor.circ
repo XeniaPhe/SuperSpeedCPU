@@ -60,6 +60,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="69" rx="10" ry="10" stroke="#000000" width="112" x="140" y="190"/>
+      <text font-family="SansSerif" font-size="16" text-anchor="middle" x="197" y="232">SUBTRACTOR</text>
+      <circ-port height="8" pin="300,340" width="8" x="136" y="206"/>
+      <circ-port height="10" pin="1440,340" width="10" x="245" y="235"/>
+      <circ-port height="10" pin="1440,450" width="10" x="245" y="205"/>
+      <circ-port height="8" pin="1050,550" width="8" x="136" y="236"/>
+      <circ-anchor facing="east" height="6" width="6" x="247" y="207"/>
+    </appear>
     <wire from="(870,230)" to="(870,240)"/>
     <wire from="(320,340)" to="(1010,340)"/>
     <wire from="(760,230)" to="(760,300)"/>
@@ -267,50 +276,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1020,180)" to="(1160,180)"/>
     <wire from="(670,180)" to="(680,180)"/>
     <wire from="(730,240)" to="(740,240)"/>
-    <comp lib="0" loc="(1440,450)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="D"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="SansSerif bold 22"/>
-    </comp>
-    <comp lib="7" loc="(920,140)" name="FullSubtractor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(500,140)" name="FullSubtractor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(570,140)" name="FullSubtractor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(430,740)" name="FullSubtractor">
+    <comp lib="7" loc="(570,740)" name="FullSubtractor">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(710,740)" name="FullSubtractor">
+    <comp lib="7" loc="(990,740)" name="FullSubtractor">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(780,740)" name="FullSubtractor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="7" loc="(360,740)" name="FullSubtractor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(1050,550)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="N1"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="SansSerif bold 22"/>
-    </comp>
-    <comp lib="0" loc="(300,340)" name="Splitter">
-      <a name="fanout" val="20"/>
-      <a name="incoming" val="20"/>
-      <a name="appear" val="legacy"/>
-    </comp>
-    <comp lib="7" loc="(850,140)" name="FullSubtractor">
+    <comp lib="7" loc="(780,140)" name="FullSubtractor">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="7" loc="(640,740)" name="FullSubtractor">
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(1440,340)" name="Pin">
       <a name="facing" val="west"/>
@@ -319,44 +295,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 22"/>
     </comp>
-    <comp lib="7" loc="(990,140)" name="FullSubtractor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(990,740)" name="FullSubtractor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(1050,550)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="20"/>
-      <a name="incoming" val="20"/>
-      <a name="appear" val="legacy"/>
-    </comp>
-    <comp lib="7" loc="(640,740)" name="FullSubtractor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="7" loc="(570,740)" name="FullSubtractor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="7" loc="(640,140)" name="FullSubtractor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(780,140)" name="FullSubtractor">
-      <a name="facing" val="north"/>
-    </comp>
     <comp lib="7" loc="(360,140)" name="FullSubtractor">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(500,740)" name="FullSubtractor">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="7" loc="(430,140)" name="FullSubtractor">
+    <comp lib="7" loc="(570,140)" name="FullSubtractor">
       <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(300,340)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="N0"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
     </comp>
     <comp lib="0" loc="(1440,450)" name="Splitter">
       <a name="facing" val="west"/>
@@ -367,14 +310,80 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="7" loc="(710,140)" name="FullSubtractor">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="7" loc="(780,740)" name="FullSubtractor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="7" loc="(500,740)" name="FullSubtractor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(300,340)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="N0"/>
+      <a name="labelfont" val="SansSerif bold 24"/>
+    </comp>
+    <comp lib="7" loc="(430,740)" name="FullSubtractor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="7" loc="(920,140)" name="FullSubtractor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="7" loc="(430,140)" name="FullSubtractor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1050,550)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="N1"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 22"/>
+    </comp>
+    <comp lib="7" loc="(500,140)" name="FullSubtractor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="7" loc="(360,740)" name="FullSubtractor">
+      <a name="facing" val="south"/>
+    </comp>
     <comp lib="7" loc="(850,740)" name="FullSubtractor">
       <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(1050,550)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="20"/>
+      <a name="incoming" val="20"/>
+      <a name="appear" val="legacy"/>
+    </comp>
+    <comp lib="0" loc="(300,340)" name="Splitter">
+      <a name="fanout" val="20"/>
+      <a name="incoming" val="20"/>
+      <a name="appear" val="legacy"/>
+    </comp>
+    <comp lib="0" loc="(250,180)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="7" loc="(640,140)" name="FullSubtractor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1440,450)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="20"/>
+      <a name="label" val="D"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 22"/>
+    </comp>
+    <comp lib="7" loc="(710,740)" name="FullSubtractor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="7" loc="(990,140)" name="FullSubtractor">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="7" loc="(920,740)" name="FullSubtractor">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(250,180)" name="Constant">
-      <a name="value" val="0x0"/>
+    <comp lib="7" loc="(850,140)" name="FullSubtractor">
+      <a name="facing" val="north"/>
     </comp>
   </circuit>
 </project>
