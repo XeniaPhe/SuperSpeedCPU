@@ -64,9 +64,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <rect fill="none" height="40" stroke="#000000" stroke-width="2" width="80" x="120" y="101"/>
 <text font-family="SansSerif" font-size="16" text-anchor="middle" x="160" y="126">reg(20)</text>
 <polyline fill="none" points="121,109 131,121 119,132" stroke="#000000"/>
-<circ-port height="8" pin="100,500" width="8" x="116" y="116"/>
+<circ-port height="8" pin="60,520" width="8" x="116" y="106"/>
 <circ-port height="8" pin="1120,90" width="8" x="156" y="96"/>
 <circ-port height="10" pin="1120,800" width="10" x="155" y="135"/>
+<circ-port height="8" pin="60,480" width="8" x="116" y="126"/>
 <circ-anchor facing="east" height="6" width="6" x="157" y="137"/>
 </appear>
 <wire from="(670,500)" to="(760,500)"/>
@@ -82,11 +83,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(1060,110)" to="(1060,270)"/>
 <wire from="(1150,330)" to="(1390,330)"/>
 <wire from="(280,420)" to="(300,420)"/>
-<wire from="(1840,420)" to="(1860,420)"/>
 <wire from="(1160,110)" to="(1160,310)"/>
-<wire from="(940,500)" to="(1030,500)"/>
-<wire from="(760,420)" to="(780,420)"/>
+<wire from="(1840,420)" to="(1860,420)"/>
 <wire from="(1090,540)" to="(1090,780)"/>
+<wire from="(760,420)" to="(780,420)"/>
+<wire from="(940,500)" to="(1030,500)"/>
 <wire from="(670,460)" to="(690,460)"/>
 <wire from="(1660,460)" to="(1680,460)"/>
 <wire from="(1150,580)" to="(1150,780)"/>
@@ -128,10 +129,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(850,460)" to="(850,500)"/>
 <wire from="(660,420)" to="(660,600)"/>
 <wire from="(760,500)" to="(850,500)"/>
-<wire from="(480,640)" to="(1040,640)"/>
 <wire from="(1630,420)" to="(1650,420)"/>
-<wire from="(1750,500)" to="(1840,500)"/>
+<wire from="(480,640)" to="(1040,640)"/>
 <wire from="(1390,460)" to="(1410,460)"/>
+<wire from="(1750,500)" to="(1840,500)"/>
 <wire from="(1270,420)" to="(1290,420)"/>
 <wire from="(1160,310)" to="(1480,310)"/>
 <wire from="(220,500)" to="(310,500)"/>
@@ -142,9 +143,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(760,310)" to="(760,420)"/>
 <wire from="(850,500)" to="(940,500)"/>
 <wire from="(1150,580)" to="(1470,580)"/>
-<wire from="(640,420)" to="(660,420)"/>
-<wire from="(1210,110)" to="(1210,210)"/>
+<wire from="(180,500)" to="(220,500)"/>
 <wire from="(1200,420)" to="(1200,520)"/>
+<wire from="(1210,110)" to="(1210,210)"/>
+<wire from="(640,420)" to="(660,420)"/>
 <wire from="(1470,420)" to="(1470,580)"/>
 <wire from="(490,250)" to="(490,420)"/>
 <wire from="(580,460)" to="(600,460)"/>
@@ -158,8 +160,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(1210,420)" to="(1230,420)"/>
 <wire from="(1120,460)" to="(1140,460)"/>
 <wire from="(1300,460)" to="(1320,460)"/>
-<wire from="(1120,520)" to="(1120,780)"/>
 <wire from="(1120,420)" to="(1140,420)"/>
+<wire from="(1120,520)" to="(1120,780)"/>
 <wire from="(1150,110)" to="(1150,330)"/>
 <wire from="(490,460)" to="(510,460)"/>
 <wire from="(1200,110)" to="(1200,230)"/>
@@ -172,9 +174,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(1660,270)" to="(1660,420)"/>
 <wire from="(1840,460)" to="(1840,500)"/>
 <wire from="(1720,420)" to="(1740,420)"/>
+<wire from="(60,480)" to="(130,480)"/>
 <wire from="(1300,460)" to="(1300,500)"/>
 <wire from="(400,420)" to="(420,420)"/>
-<wire from="(100,500)" to="(220,500)"/>
 <wire from="(1390,460)" to="(1390,500)"/>
 <wire from="(1200,680)" to="(1920,680)"/>
 <wire from="(1480,460)" to="(1500,460)"/>
@@ -192,6 +194,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(760,460)" to="(780,460)"/>
 <wire from="(1570,460)" to="(1590,460)"/>
 <wire from="(840,560)" to="(1080,560)"/>
+<wire from="(60,520)" to="(130,520)"/>
 <wire from="(400,230)" to="(1040,230)"/>
 <wire from="(1810,420)" to="(1830,420)"/>
 <wire from="(1020,680)" to="(1020,780)"/>
@@ -267,69 +270,54 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <wire from="(1040,110)" to="(1040,230)"/>
 <wire from="(850,330)" to="(850,420)"/>
 <wire from="(750,420)" to="(750,580)"/>
-<wire from="(1030,110)" to="(1030,210)"/>
 <wire from="(1020,420)" to="(1020,520)"/>
-<wire from="(1990,420)" to="(2010,420)"/>
-<wire from="(1180,110)" to="(1180,270)"/>
+<wire from="(1030,110)" to="(1030,210)"/>
 <wire from="(750,580)" to="(1070,580)"/>
-<wire from="(1090,420)" to="(1110,420)"/>
+<wire from="(1180,110)" to="(1180,270)"/>
+<wire from="(1990,420)" to="(2010,420)"/>
 <wire from="(1360,420)" to="(1380,420)"/>
+<wire from="(1090,420)" to="(1110,420)"/>
 <wire from="(1480,420)" to="(1500,420)"/>
 <wire from="(1390,330)" to="(1390,420)"/>
 <wire from="(310,460)" to="(330,460)"/>
-<wire from="(1030,500)" to="(1120,500)"/>
 <wire from="(1210,210)" to="(1930,210)"/>
-<wire from="(1390,420)" to="(1410,420)"/>
+<wire from="(1030,500)" to="(1120,500)"/>
 <wire from="(1190,660)" to="(1830,660)"/>
+<wire from="(1390,420)" to="(1410,420)"/>
 <wire from="(490,500)" to="(580,500)"/>
-<wire from="(1930,460)" to="(1950,460)"/>
 <wire from="(220,190)" to="(1020,190)"/>
+<wire from="(1930,460)" to="(1950,460)"/>
 <wire from="(310,210)" to="(1030,210)"/>
 <wire from="(400,460)" to="(400,500)"/>
-<comp lib="0" loc="(1120,90)" name="Splitter">
-<a name="facing" val="south"/>
-<a name="fanout" val="20"/>
-<a name="incoming" val="20"/>
-<a name="appear" val="center"/>
-</comp>
-<comp lib="7" loc="(1540,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(460,420)" name="RisingEdgeTriggeredDFlipFlop"/>
 <comp lib="7" loc="(1630,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1990,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1720,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(730,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(640,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(910,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1810,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(550,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1000,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(820,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1900,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1090,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(1540,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(370,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(1270,420)" name="RisingEdgeTriggeredDFlipFlop"/>
 <comp lib="0" loc="(1120,800)" name="Splitter">
 <a name="facing" val="north"/>
 <a name="fanout" val="20"/>
 <a name="incoming" val="20"/>
-<a name="appear" val="center"/>
+<a name="appear" val="legacy"/>
 </comp>
-<comp lib="7" loc="(1180,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(1270,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="0" loc="(1120,800)" name="Pin">
-<a name="facing" val="north"/>
-<a name="output" val="true"/>
-<a name="width" val="20"/>
-<a name="label" val="Q"/>
-<a name="labelloc" val="south"/>
-<a name="labelfont" val="SansSerif bold 24"/>
+<comp lib="7" loc="(1900,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(1000,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="1" loc="(180,500)" name="AND Gate">
+<a name="inputs" val="2"/>
 </comp>
+<comp lib="0" loc="(1120,90)" name="Splitter">
+<a name="facing" val="south"/>
+<a name="fanout" val="20"/>
+<a name="incoming" val="20"/>
+<a name="appear" val="legacy"/>
+</comp>
+<comp lib="7" loc="(550,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(730,420)" name="RisingEdgeTriggeredDFlipFlop"/>
 <comp lib="7" loc="(1450,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="7" loc="(280,420)" name="RisingEdgeTriggeredDFlipFlop"/>
-<comp lib="0" loc="(100,500)" name="Pin">
+<comp lib="0" loc="(60,480)" name="Pin">
 <a name="tristate" val="false"/>
-<a name="label" val="C"/>
+<a name="label" val="E"/>
 <a name="labelfont" val="SansSerif bold 24"/>
 </comp>
-<comp lib="7" loc="(370,420)" name="RisingEdgeTriggeredDFlipFlop"/>
 <comp lib="0" loc="(1120,90)" name="Pin">
 <a name="facing" val="south"/>
 <a name="width" val="20"/>
@@ -338,6 +326,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <a name="labelloc" val="north"/>
 <a name="labelfont" val="SansSerif bold 24"/>
 </comp>
+<comp lib="7" loc="(1990,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="0" loc="(1120,800)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="Q"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1810,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(910,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(1720,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(1180,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(820,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(280,420)" name="RisingEdgeTriggeredDFlipFlop"/>
 <comp lib="7" loc="(1360,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(640,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="7" loc="(1090,420)" name="RisingEdgeTriggeredDFlipFlop"/>
+<comp lib="0" loc="(60,520)" name="Pin">
+<a name="tristate" val="false"/>
+<a name="label" val="C"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(460,420)" name="RisingEdgeTriggeredDFlipFlop"/>
 </circuit>
 </project>

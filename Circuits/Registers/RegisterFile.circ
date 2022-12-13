@@ -1,507 +1,507 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project source="2.7.1" version="1.0">
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0"/>
-  <lib desc="#Gates" name="1"/>
-  <lib desc="#Plexers" name="2"/>
-  <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4">
-    <tool name="ROM">
-      <a name="contents">addr/data: 8 8
+<lib desc="#Gates" name="1"/>
+<lib desc="#Plexers" name="2"/>
+<lib desc="#Arithmetic" name="3"/>
+<lib desc="#Memory" name="4">
+<tool name="ROM">
+<a name="contents">addr/data: 8 8
 0
 </a>
-    </tool>
-  </lib>
-  <lib desc="#I/O" name="5"/>
-  <lib desc="#Base" name="6">
-    <tool name="Text Tool">
-      <a name="text" val=""/>
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="valign" val="base"/>
-    </tool>
-  </lib>
-  <lib desc="file#20BitRegister.circ" name="7"/>
-  <main name="RegisterFile"/>
-  <options>
-    <a name="gateUndefined" val="ignore"/>
-    <a name="simlimit" val="1000"/>
-    <a name="simrand" val="0"/>
-  </options>
-  <mappings>
-    <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Button3" name="Menu Tool"/>
-    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
-  </mappings>
-  <toolbar>
-    <tool lib="6" name="Poke Tool"/>
-    <tool lib="6" name="Edit Tool"/>
-    <tool lib="6" name="Text Tool">
-      <a name="text" val=""/>
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="valign" val="base"/>
-    </tool>
-    <sep/>
-    <tool lib="0" name="Pin">
-      <a name="tristate" val="false"/>
-    </tool>
-    <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </tool>
-    <tool lib="1" name="NOT Gate"/>
-    <tool lib="1" name="AND Gate"/>
-    <tool lib="1" name="OR Gate"/>
-  </toolbar>
-  <circuit name="RegisterFile">
-    <a name="circuit" val="RegisterFile"/>
-    <a name="clabel" val=""/>
-    <a name="clabelup" val="east"/>
-    <a name="clabelfont" val="SansSerif plain 12"/>
-    <appear>
-      <rect fill="#ffffff" height="78" stroke="#000000" stroke-width="3" width="320" x="50" y="161"/>
-      <text font-family="SansSerif" font-size="26" text-anchor="middle" x="212" y="211">REGISTER FILE</text>
-      <circ-port height="8" pin="330,360" width="8" x="46" y="196"/>
-      <circ-port height="8" pin="450,200" width="8" x="56" y="156"/>
-      <circ-port height="8" pin="570,200" width="8" x="76" y="156"/>
-      <circ-port height="8" pin="690,200" width="8" x="96" y="156"/>
-      <circ-port height="8" pin="810,200" width="8" x="116" y="156"/>
-      <circ-port height="8" pin="930,200" width="8" x="136" y="156"/>
-      <circ-port height="8" pin="1050,200" width="8" x="156" y="156"/>
-      <circ-port height="8" pin="1170,200" width="8" x="176" y="156"/>
-      <circ-port height="8" pin="1290,200" width="8" x="196" y="156"/>
-      <circ-port height="8" pin="1410,200" width="8" x="216" y="156"/>
-      <circ-port height="8" pin="1530,200" width="8" x="236" y="156"/>
-      <circ-port height="8" pin="1650,200" width="8" x="256" y="156"/>
-      <circ-port height="8" pin="1770,200" width="8" x="276" y="156"/>
-      <circ-port height="8" pin="1890,200" width="8" x="296" y="156"/>
-      <circ-port height="8" pin="2010,200" width="8" x="316" y="156"/>
-      <circ-port height="8" pin="2130,200" width="8" x="336" y="156"/>
-      <circ-port height="8" pin="2250,200" width="8" x="356" y="156"/>
-      <circ-port height="10" pin="450,460" width="10" x="55" y="235"/>
-      <circ-port height="10" pin="570,460" width="10" x="75" y="235"/>
-      <circ-port height="10" pin="690,460" width="10" x="95" y="235"/>
-      <circ-port height="10" pin="810,460" width="10" x="115" y="235"/>
-      <circ-port height="10" pin="930,460" width="10" x="135" y="235"/>
-      <circ-port height="10" pin="1050,460" width="10" x="155" y="235"/>
-      <circ-port height="10" pin="1170,460" width="10" x="175" y="235"/>
-      <circ-port height="10" pin="1290,460" width="10" x="195" y="235"/>
-      <circ-port height="10" pin="1410,460" width="10" x="215" y="235"/>
-      <circ-port height="10" pin="1530,460" width="10" x="235" y="235"/>
-      <circ-port height="10" pin="1650,460" width="10" x="255" y="235"/>
-      <circ-port height="10" pin="1770,460" width="10" x="275" y="235"/>
-      <circ-port height="10" pin="1890,460" width="10" x="295" y="235"/>
-      <circ-port height="10" pin="2010,460" width="10" x="315" y="235"/>
-      <circ-port height="10" pin="2130,460" width="10" x="335" y="235"/>
-      <circ-port height="10" pin="2250,460" width="10" x="355" y="235"/>
-      <circ-anchor facing="east" height="6" width="6" x="207" y="197"/>
-    </appear>
-    <wire from="(330,360)" to="(390,360)"/>
-    <wire from="(2130,200)" to="(2130,300)"/>
-    <wire from="(2250,200)" to="(2250,300)"/>
-    <wire from="(2190,320)" to="(2210,320)"/>
-    <wire from="(2130,340)" to="(2130,460)"/>
-    <wire from="(2250,340)" to="(2250,460)"/>
-    <wire from="(1650,340)" to="(1650,460)"/>
-    <wire from="(870,320)" to="(890,320)"/>
-    <wire from="(450,200)" to="(450,300)"/>
-    <wire from="(1770,340)" to="(1770,460)"/>
-    <wire from="(990,320)" to="(1010,320)"/>
-    <wire from="(1890,340)" to="(1890,460)"/>
-    <wire from="(630,320)" to="(650,320)"/>
-    <wire from="(2010,340)" to="(2010,460)"/>
-    <wire from="(750,320)" to="(770,320)"/>
-    <wire from="(1050,340)" to="(1050,460)"/>
-    <wire from="(810,200)" to="(810,300)"/>
-    <wire from="(1170,340)" to="(1170,460)"/>
-    <wire from="(390,320)" to="(410,320)"/>
-    <wire from="(930,200)" to="(930,300)"/>
-    <wire from="(1050,200)" to="(1050,300)"/>
-    <wire from="(1290,340)" to="(1290,460)"/>
-    <wire from="(510,320)" to="(530,320)"/>
-    <wire from="(570,200)" to="(570,300)"/>
-    <wire from="(1410,340)" to="(1410,460)"/>
-    <wire from="(690,200)" to="(690,300)"/>
-    <wire from="(1530,340)" to="(1530,460)"/>
-    <wire from="(570,340)" to="(570,460)"/>
-    <wire from="(1410,200)" to="(1410,300)"/>
-    <wire from="(1950,320)" to="(1970,320)"/>
-    <wire from="(690,340)" to="(690,460)"/>
-    <wire from="(1530,200)" to="(1530,300)"/>
-    <wire from="(2070,320)" to="(2090,320)"/>
-    <wire from="(1590,320)" to="(1610,320)"/>
-    <wire from="(810,340)" to="(810,460)"/>
-    <wire from="(1170,200)" to="(1170,300)"/>
-    <wire from="(1710,320)" to="(1730,320)"/>
-    <wire from="(930,340)" to="(930,460)"/>
-    <wire from="(1290,200)" to="(1290,300)"/>
-    <wire from="(1830,320)" to="(1850,320)"/>
-    <wire from="(1890,200)" to="(1890,300)"/>
-    <wire from="(1350,320)" to="(1370,320)"/>
-    <wire from="(2010,200)" to="(2010,300)"/>
-    <wire from="(1470,320)" to="(1490,320)"/>
-    <wire from="(1110,320)" to="(1130,320)"/>
-    <wire from="(1650,200)" to="(1650,300)"/>
-    <wire from="(450,340)" to="(450,460)"/>
-    <wire from="(1770,200)" to="(1770,300)"/>
-    <wire from="(1230,320)" to="(1250,320)"/>
-    <wire from="(630,360)" to="(750,360)"/>
-    <wire from="(750,360)" to="(870,360)"/>
-    <wire from="(870,360)" to="(990,360)"/>
-    <wire from="(990,360)" to="(1110,360)"/>
-    <wire from="(2190,320)" to="(2190,360)"/>
-    <wire from="(390,360)" to="(510,360)"/>
-    <wire from="(510,360)" to="(630,360)"/>
-    <wire from="(1590,360)" to="(1710,360)"/>
-    <wire from="(1710,360)" to="(1830,360)"/>
-    <wire from="(1830,360)" to="(1950,360)"/>
-    <wire from="(1950,360)" to="(2070,360)"/>
-    <wire from="(2070,360)" to="(2190,360)"/>
-    <wire from="(1110,360)" to="(1230,360)"/>
-    <wire from="(1230,360)" to="(1350,360)"/>
-    <wire from="(1350,360)" to="(1470,360)"/>
-    <wire from="(1470,360)" to="(1590,360)"/>
-    <wire from="(630,320)" to="(630,360)"/>
-    <wire from="(750,320)" to="(750,360)"/>
-    <wire from="(870,320)" to="(870,360)"/>
-    <wire from="(990,320)" to="(990,360)"/>
-    <wire from="(390,320)" to="(390,360)"/>
-    <wire from="(510,320)" to="(510,360)"/>
-    <wire from="(1590,320)" to="(1590,360)"/>
-    <wire from="(1710,320)" to="(1710,360)"/>
-    <wire from="(1830,320)" to="(1830,360)"/>
-    <wire from="(1950,320)" to="(1950,360)"/>
-    <wire from="(2070,320)" to="(2070,360)"/>
-    <wire from="(1110,320)" to="(1110,360)"/>
-    <wire from="(1230,320)" to="(1230,360)"/>
-    <wire from="(1350,320)" to="(1350,360)"/>
-    <wire from="(1470,320)" to="(1470,360)"/>
-    <comp lib="7" loc="(1650,340)" name="20BitRegister">
-      <a name="label" val="R10"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(1890,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR12"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(1290,340)" name="20BitRegister">
-      <a name="label" val="R7"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(570,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR1"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(1890,340)" name="20BitRegister">
-      <a name="label" val="R12"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(810,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR3"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(2010,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR13"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(2130,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR14"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1050,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR5"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(1170,340)" name="20BitRegister">
-      <a name="label" val="R6"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="7" loc="(570,340)" name="20BitRegister">
-      <a name="label" val="R1"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="7" loc="(1530,340)" name="20BitRegister">
-      <a name="label" val="R9"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(1170,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR6"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1290,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR7"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1650,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR10"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(690,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR2"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(2130,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR14"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1890,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR12"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1530,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR9"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(2250,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR15"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1770,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR11"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(450,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR0"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(450,340)" name="20BitRegister">
-      <a name="label" val="R0"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(570,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR1"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(1770,340)" name="20BitRegister">
-      <a name="label" val="R11"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(1530,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR9"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(2130,340)" name="20BitRegister">
-      <a name="label" val="R14"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(2250,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR15"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1290,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR7"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(2010,340)" name="20BitRegister">
-      <a name="label" val="R13"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(1650,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR10"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(1410,340)" name="20BitRegister">
-      <a name="label" val="R8"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(450,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR0"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1410,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR8"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(1050,340)" name="20BitRegister">
-      <a name="label" val="R5"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(1410,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR8"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1170,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR6"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(930,340)" name="20BitRegister">
-      <a name="label" val="R4"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="7" loc="(690,340)" name="20BitRegister">
-      <a name="label" val="R2"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="7" loc="(2250,340)" name="20BitRegister">
-      <a name="label" val="R15"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(930,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR4"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(810,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR3"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1050,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR5"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(810,340)" name="20BitRegister">
-      <a name="label" val="R3"/>
-      <a name="labelfont" val="SansSerif bold 32"/>
-    </comp>
-    <comp lib="0" loc="(690,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR2"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(2010,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR13"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(930,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WR4"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(330,360)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="C"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="0" loc="(1770,460)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
-      <a name="label" val="RR11"/>
-      <a name="labelloc" val="south"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-  </circuit>
+</tool>
+</lib>
+<lib desc="#I/O" name="5"/>
+<lib desc="#Base" name="6">
+<tool name="Text Tool">
+<a name="text" val=""/>
+<a name="font" val="SansSerif plain 12"/>
+<a name="halign" val="center"/>
+<a name="valign" val="base"/>
+</tool>
+</lib>
+<lib desc="file#20BitRegister.circ" name="7"/>
+<main name="RegisterFile"/>
+<options>
+<a name="gateUndefined" val="ignore"/>
+<a name="simlimit" val="1000"/>
+<a name="simrand" val="0"/>
+</options>
+<mappings>
+<tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+<tool lib="6" map="Button3" name="Menu Tool"/>
+<tool lib="6" map="Button2" name="Menu Tool"/>
+</mappings>
+<toolbar>
+<tool lib="6" name="Poke Tool"/>
+<tool lib="6" name="Edit Tool"/>
+<tool lib="6" name="Text Tool">
+<a name="text" val=""/>
+<a name="font" val="SansSerif plain 12"/>
+<a name="halign" val="center"/>
+<a name="valign" val="base"/>
+</tool>
+<sep/>
+<tool lib="0" name="Pin">
+<a name="tristate" val="false"/>
+</tool>
+<tool lib="0" name="Pin">
+<a name="facing" val="west"/>
+<a name="output" val="true"/>
+<a name="labelloc" val="east"/>
+</tool>
+<tool lib="1" name="NOT Gate"/>
+<tool lib="1" name="AND Gate"/>
+<tool lib="1" name="OR Gate"/>
+</toolbar>
+<circuit name="RegisterFile">
+<a name="circuit" val="RegisterFile"/>
+<a name="clabel" val=""/>
+<a name="clabelup" val="east"/>
+<a name="clabelfont" val="SansSerif plain 12"/>
+<appear>
+<rect fill="#ffffff" height="78" stroke="#000000" stroke-width="3" width="320" x="50" y="161"/>
+<text font-family="SansSerif" font-size="26" text-anchor="middle" x="212" y="211">REGISTER FILE</text>
+<circ-port height="8" pin="330,360" width="8" x="46" y="196"/>
+<circ-port height="8" pin="450,200" width="8" x="56" y="156"/>
+<circ-port height="8" pin="570,200" width="8" x="76" y="156"/>
+<circ-port height="8" pin="690,200" width="8" x="96" y="156"/>
+<circ-port height="8" pin="810,200" width="8" x="116" y="156"/>
+<circ-port height="8" pin="930,200" width="8" x="136" y="156"/>
+<circ-port height="8" pin="1050,200" width="8" x="156" y="156"/>
+<circ-port height="8" pin="1170,200" width="8" x="176" y="156"/>
+<circ-port height="8" pin="1290,200" width="8" x="196" y="156"/>
+<circ-port height="8" pin="1410,200" width="8" x="216" y="156"/>
+<circ-port height="8" pin="1530,200" width="8" x="236" y="156"/>
+<circ-port height="8" pin="1650,200" width="8" x="256" y="156"/>
+<circ-port height="8" pin="1770,200" width="8" x="276" y="156"/>
+<circ-port height="8" pin="1890,200" width="8" x="296" y="156"/>
+<circ-port height="8" pin="2010,200" width="8" x="316" y="156"/>
+<circ-port height="8" pin="2130,200" width="8" x="336" y="156"/>
+<circ-port height="8" pin="2250,200" width="8" x="356" y="156"/>
+<circ-port height="10" pin="450,460" width="10" x="55" y="235"/>
+<circ-port height="10" pin="570,460" width="10" x="75" y="235"/>
+<circ-port height="10" pin="690,460" width="10" x="95" y="235"/>
+<circ-port height="10" pin="810,460" width="10" x="115" y="235"/>
+<circ-port height="10" pin="930,460" width="10" x="135" y="235"/>
+<circ-port height="10" pin="1050,460" width="10" x="155" y="235"/>
+<circ-port height="10" pin="1170,460" width="10" x="175" y="235"/>
+<circ-port height="10" pin="1290,460" width="10" x="195" y="235"/>
+<circ-port height="10" pin="1410,460" width="10" x="215" y="235"/>
+<circ-port height="10" pin="1530,460" width="10" x="235" y="235"/>
+<circ-port height="10" pin="1650,460" width="10" x="255" y="235"/>
+<circ-port height="10" pin="1770,460" width="10" x="275" y="235"/>
+<circ-port height="10" pin="1890,460" width="10" x="295" y="235"/>
+<circ-port height="10" pin="2010,460" width="10" x="315" y="235"/>
+<circ-port height="10" pin="2130,460" width="10" x="335" y="235"/>
+<circ-port height="10" pin="2250,460" width="10" x="355" y="235"/>
+<circ-anchor facing="east" height="6" width="6" x="207" y="197"/>
+</appear>
+<wire from="(1230,310)" to="(1230,360)"/>
+<wire from="(870,310)" to="(870,360)"/>
+<wire from="(1710,360)" to="(1830,360)"/>
+<wire from="(1350,360)" to="(1470,360)"/>
+<wire from="(750,310)" to="(750,360)"/>
+<wire from="(1830,310)" to="(1850,310)"/>
+<wire from="(1470,360)" to="(1590,360)"/>
+<wire from="(390,310)" to="(410,310)"/>
+<wire from="(1890,340)" to="(1890,460)"/>
+<wire from="(990,310)" to="(990,360)"/>
+<wire from="(630,310)" to="(630,360)"/>
+<wire from="(1950,310)" to="(1970,310)"/>
+<wire from="(1590,310)" to="(1590,360)"/>
+<wire from="(810,340)" to="(810,460)"/>
+<wire from="(1950,360)" to="(2070,360)"/>
+<wire from="(2250,340)" to="(2250,460)"/>
+<wire from="(1590,360)" to="(1710,360)"/>
+<wire from="(930,200)" to="(930,300)"/>
+<wire from="(1710,310)" to="(1710,360)"/>
+<wire from="(2070,360)" to="(2190,360)"/>
+<wire from="(690,340)" to="(690,460)"/>
+<wire from="(930,340)" to="(930,460)"/>
+<wire from="(1110,310)" to="(1110,360)"/>
+<wire from="(1110,310)" to="(1130,310)"/>
+<wire from="(390,360)" to="(510,360)"/>
+<wire from="(2130,340)" to="(2130,460)"/>
+<wire from="(1050,200)" to="(1050,300)"/>
+<wire from="(330,360)" to="(390,360)"/>
+<wire from="(1710,310)" to="(1730,310)"/>
+<wire from="(510,360)" to="(630,360)"/>
+<wire from="(1230,360)" to="(1350,360)"/>
+<wire from="(570,340)" to="(570,460)"/>
+<wire from="(2190,310)" to="(2190,360)"/>
+<wire from="(1590,310)" to="(1610,310)"/>
+<wire from="(630,360)" to="(750,360)"/>
+<wire from="(1530,340)" to="(1530,460)"/>
+<wire from="(1410,200)" to="(1410,300)"/>
+<wire from="(1830,360)" to="(1950,360)"/>
+<wire from="(990,360)" to="(1110,360)"/>
+<wire from="(1770,340)" to="(1770,460)"/>
+<wire from="(510,310)" to="(510,360)"/>
+<wire from="(1050,340)" to="(1050,460)"/>
+<wire from="(510,310)" to="(530,310)"/>
+<wire from="(1770,200)" to="(1770,300)"/>
+<wire from="(870,310)" to="(890,310)"/>
+<wire from="(1890,200)" to="(1890,300)"/>
+<wire from="(1650,340)" to="(1650,460)"/>
+<wire from="(750,360)" to="(870,360)"/>
+<wire from="(1350,310)" to="(1370,310)"/>
+<wire from="(1290,200)" to="(1290,300)"/>
+<wire from="(810,200)" to="(810,300)"/>
+<wire from="(1470,310)" to="(1470,360)"/>
+<wire from="(390,310)" to="(390,360)"/>
+<wire from="(2190,310)" to="(2210,310)"/>
+<wire from="(2250,200)" to="(2250,300)"/>
+<wire from="(1170,200)" to="(1170,300)"/>
+<wire from="(1350,310)" to="(1350,360)"/>
+<wire from="(870,360)" to="(990,360)"/>
+<wire from="(1170,340)" to="(1170,460)"/>
+<wire from="(1470,310)" to="(1490,310)"/>
+<wire from="(450,340)" to="(450,460)"/>
+<wire from="(1110,360)" to="(1230,360)"/>
+<wire from="(1650,200)" to="(1650,300)"/>
+<wire from="(1830,310)" to="(1830,360)"/>
+<wire from="(2130,200)" to="(2130,300)"/>
+<wire from="(1230,310)" to="(1250,310)"/>
+<wire from="(2010,200)" to="(2010,300)"/>
+<wire from="(690,200)" to="(690,300)"/>
+<wire from="(1410,340)" to="(1410,460)"/>
+<wire from="(1950,310)" to="(1950,360)"/>
+<wire from="(750,310)" to="(770,310)"/>
+<wire from="(1530,200)" to="(1530,300)"/>
+<wire from="(990,310)" to="(1010,310)"/>
+<wire from="(630,310)" to="(650,310)"/>
+<wire from="(2070,310)" to="(2090,310)"/>
+<wire from="(2070,310)" to="(2070,360)"/>
+<wire from="(450,200)" to="(450,300)"/>
+<wire from="(570,200)" to="(570,300)"/>
+<wire from="(1290,340)" to="(1290,460)"/>
+<wire from="(2010,340)" to="(2010,460)"/>
+<comp lib="0" loc="(2250,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR15"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(570,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR1"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1050,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR5"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(2130,340)" name="20BitRegister">
+<a name="label" val="R14"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(1170,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR6"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(2250,340)" name="20BitRegister">
+<a name="label" val="R15"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(1410,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR8"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(2010,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR13"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(450,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR0"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1770,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR11"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1410,340)" name="20BitRegister">
+<a name="label" val="R8"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="7" loc="(1890,340)" name="20BitRegister">
+<a name="label" val="R12"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="7" loc="(1530,340)" name="20BitRegister">
+<a name="label" val="R9"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(690,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR2"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(930,340)" name="20BitRegister">
+<a name="label" val="R4"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(1290,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR7"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(570,340)" name="20BitRegister">
+<a name="label" val="R1"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(2010,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR13"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(810,340)" name="20BitRegister">
+<a name="label" val="R3"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(1770,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR11"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(570,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR1"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1290,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR7"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1890,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR12"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1890,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR12"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1290,340)" name="20BitRegister">
+<a name="label" val="R7"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(1650,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR10"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1650,340)" name="20BitRegister">
+<a name="label" val="R10"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(330,360)" name="Pin">
+<a name="tristate" val="false"/>
+<a name="label" val="C"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1170,340)" name="20BitRegister">
+<a name="label" val="R6"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(1170,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR6"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1770,340)" name="20BitRegister">
+<a name="label" val="R11"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(690,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR2"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1530,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR9"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(1050,340)" name="20BitRegister">
+<a name="label" val="R5"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="7" loc="(2010,340)" name="20BitRegister">
+<a name="label" val="R13"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(2130,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR14"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1650,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR10"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(450,340)" name="20BitRegister">
+<a name="label" val="R0"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(450,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR0"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(810,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR3"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(2130,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR14"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(2250,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR15"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(810,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR3"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1410,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR8"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(930,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR4"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1050,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR5"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="0" loc="(1530,460)" name="Pin">
+<a name="facing" val="north"/>
+<a name="output" val="true"/>
+<a name="width" val="20"/>
+<a name="label" val="RR9"/>
+<a name="labelloc" val="south"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+<comp lib="7" loc="(690,340)" name="20BitRegister">
+<a name="label" val="R2"/>
+<a name="labelfont" val="SansSerif bold 32"/>
+</comp>
+<comp lib="0" loc="(930,200)" name="Pin">
+<a name="facing" val="south"/>
+<a name="width" val="20"/>
+<a name="tristate" val="false"/>
+<a name="label" val="WR4"/>
+<a name="labelloc" val="north"/>
+<a name="labelfont" val="SansSerif bold 24"/>
+</comp>
+</circuit>
 </project>
