@@ -60,6 +60,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="69" rx="10" ry="10" stroke="#000000" width="112" x="140" y="190"/>
+      <text font-family="SansSerif" font-size="20" font-weight="bold" text-anchor="middle" x="197" y="234">MEMORY</text>
+      <circ-port height="8" pin="110,450" width="8" x="186" y="256"/>
+      <circ-port height="8" pin="110,500" width="8" x="136" y="236"/>
+      <circ-port height="8" pin="110,550" width="8" x="136" y="246"/>
+      <circ-port height="8" pin="510,240" width="8" x="136" y="196"/>
+      <circ-port height="8" pin="600,240" width="8" x="136" y="216"/>
+      <circ-port height="10" pin="650,730" width="10" x="245" y="215"/>
+      <circ-anchor facing="east" height="6" width="6" x="247" y="217"/>
+    </appear>
     <wire from="(270,390)" to="(330,390)"/>
     <wire from="(420,550)" to="(670,550)"/>
     <wire from="(360,550)" to="(420,550)"/>
@@ -106,39 +117,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(380,410)" to="(380,460)"/>
     <wire from="(510,370)" to="(640,370)"/>
     <wire from="(660,590)" to="(800,590)"/>
-    <comp lib="0" loc="(110,500)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="MS"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="1" loc="(130,610)" name="NOT Gate">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="0" loc="(110,550)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="OS"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="0" loc="(600,240)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="D"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="1" loc="(380,460)" name="NOT Gate">
+    <comp lib="1" loc="(420,510)" name="NOT Gate">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(110,450)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="C"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
+    <comp lib="2" loc="(650,690)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="width" val="20"/>
     </comp>
-    <comp lib="4" loc="(780,370)" name="RAM">
-      <a name="addrWidth" val="10"/>
-      <a name="dataWidth" val="20"/>
-      <a name="bus" val="separate"/>
+    <comp lib="6" loc="(706,313)" name="Text">
+      <a name="text" val="Instruction Memory"/>
     </comp>
     <comp lib="0" loc="(650,730)" name="Pin">
       <a name="facing" val="north"/>
@@ -157,23 +144,47 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="6" loc="(385,315)" name="Text">
-      <a name="text" val="Data Memory"/>
-    </comp>
-    <comp lib="1" loc="(420,510)" name="NOT Gate">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(650,690)" name="Multiplexer">
-      <a name="facing" val="south"/>
-      <a name="width" val="20"/>
-    </comp>
-    <comp lib="6" loc="(706,313)" name="Text">
-      <a name="text" val="Instruction Memory"/>
+    <comp lib="0" loc="(110,450)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
     <comp lib="4" loc="(470,370)" name="RAM">
       <a name="addrWidth" val="10"/>
       <a name="dataWidth" val="20"/>
       <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="0" loc="(600,240)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(380,460)" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="1" loc="(130,610)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(110,550)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="OS"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="4" loc="(780,370)" name="RAM">
+      <a name="addrWidth" val="10"/>
+      <a name="dataWidth" val="20"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="6" loc="(385,315)" name="Text">
+      <a name="text" val="Data Memory"/>
+    </comp>
+    <comp lib="0" loc="(110,500)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="MS"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
   </circuit>
 </project>
