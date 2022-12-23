@@ -89,40 +89,47 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(320,180)" to="(450,180)"/>
     <wire from="(400,150)" to="(500,150)"/>
     <wire from="(360,160)" to="(360,250)"/>
+    <comp lib="0" loc="(220,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="N1"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="7" loc="(400,150)" name="HalfSubtractor"/>
+    <comp lib="0" loc="(220,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="N0"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
     <comp lib="1" loc="(480,170)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(510,140)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="D"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="0" loc="(220,200)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="N1"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
     <comp lib="0" loc="(220,250)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
       <a name="label" val="Bin"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="7" loc="(320,170)" name="HalfSubtractor"/>
-    <comp lib="7" loc="(400,150)" name="HalfSubtractor"/>
     <comp lib="0" loc="(510,180)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
       <a name="label" val="Bout"/>
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(220,150)" name="Pin">
+    <comp lib="0" loc="(510,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="N0"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="D"/>
+      <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
+    <comp lib="7" loc="(320,170)" name="HalfSubtractor"/>
   </circuit>
 </project>

@@ -61,11 +61,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="10" pin="520,310" width="10" x="85" y="65"/>
       <circ-anchor facing="east" height="6" width="6" x="87" y="67"/>
     </appear>
+    <wire from="(490,310)" to="(520,310)"/>
     <wire from="(440,190)" to="(490,190)"/>
     <wire from="(440,310)" to="(490,310)"/>
-    <wire from="(370,260)" to="(490,260)"/>
-    <wire from="(490,310)" to="(520,310)"/>
     <wire from="(360,290)" to="(380,290)"/>
+    <wire from="(370,260)" to="(490,260)"/>
     <wire from="(170,150)" to="(190,150)"/>
     <wire from="(240,190)" to="(260,190)"/>
     <wire from="(240,310)" to="(260,310)"/>
@@ -84,36 +84,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(310,330)" to="(380,330)"/>
     <wire from="(240,190)" to="(240,250)"/>
     <wire from="(240,250)" to="(240,310)"/>
-    <comp lib="1" loc="(190,300)" name="NOT Gate">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="1" loc="(440,310)" name="NOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="0" loc="(170,250)" name="Pin">
-      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
       <a name="label" val="C"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
     <comp lib="1" loc="(440,190)" name="NOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(310,170)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(170,150)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="D"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
     <comp lib="0" loc="(520,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
       <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
+    <comp lib="0" loc="(170,150)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="D"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(190,300)" name="NOT Gate">
+      <a name="facing" val="south"/>
+    </comp>
     <comp lib="1" loc="(310,330)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(440,310)" name="NOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(310,170)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
   </circuit>

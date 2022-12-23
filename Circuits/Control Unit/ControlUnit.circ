@@ -23,8 +23,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </lib>
   <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Memory\Memory.circ" name="7"/>
   <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\ALU\ALU.circ" name="8"/>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\20BitRegister.circ" name="9"/>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\RegisterFile.circ" name="10"/>
+  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\RegisterFile.circ" name="9"/>
+  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Adder\Incrementer\10BitIncrementer.circ" name="10"/>
+  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\10BitRegister.circ" name="11"/>
   <main name="Control Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -63,63 +64,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(300,170)" to="(360,170)"/>
-    <wire from="(300,160)" to="(490,160)"/>
-    <wire from="(100,120)" to="(220,120)"/>
-    <wire from="(220,120)" to="(220,130)"/>
-    <wire from="(230,170)" to="(230,180)"/>
-    <wire from="(230,90)" to="(280,90)"/>
-    <wire from="(130,180)" to="(130,260)"/>
-    <wire from="(260,130)" to="(260,150)"/>
-    <wire from="(220,130)" to="(260,130)"/>
-    <wire from="(230,170)" to="(270,170)"/>
-    <wire from="(230,50)" to="(270,50)"/>
-    <wire from="(130,180)" to="(230,180)"/>
-    <wire from="(110,160)" to="(270,160)"/>
-    <wire from="(240,180)" to="(270,180)"/>
-    <wire from="(110,160)" to="(110,200)"/>
-    <wire from="(360,220)" to="(380,220)"/>
-    <wire from="(230,50)" to="(230,90)"/>
-    <wire from="(240,180)" to="(240,230)"/>
-    <wire from="(260,150)" to="(270,150)"/>
-    <wire from="(230,230)" to="(240,230)"/>
-    <wire from="(280,90)" to="(280,140)"/>
-    <wire from="(100,200)" to="(110,200)"/>
-    <wire from="(360,170)" to="(360,220)"/>
-    <wire from="(60,260)" to="(130,260)"/>
-    <comp lib="0" loc="(380,220)" name="Pin">
+    <wire from="(170,150)" to="(170,200)"/>
+    <wire from="(290,230)" to="(290,300)"/>
+    <wire from="(170,70)" to="(170,150)"/>
+    <wire from="(100,230)" to="(130,230)"/>
+    <wire from="(170,300)" to="(290,300)"/>
+    <wire from="(170,150)" to="(290,150)"/>
+    <wire from="(290,150)" to="(290,190)"/>
+    <wire from="(170,300)" to="(170,410)"/>
+    <wire from="(170,240)" to="(170,300)"/>
+    <wire from="(170,410)" to="(190,410)"/>
+    <wire from="(80,210)" to="(130,210)"/>
+    <comp lib="0" loc="(190,410)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="width" val="10"/>
+      <a name="pull" val="down"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(490,160)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="20"/>
+    <comp lib="0" loc="(170,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+    </comp>
+    <comp lib="10" loc="(290,190)" name="10BitIncrementer">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(80,210)" name="Clock"/>
+    <comp lib="0" loc="(100,230)" name="Constant"/>
+    <comp lib="11" loc="(170,240)" name="10BitRegister">
+      <a name="label" val="PC"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(100,200)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(230,230)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="8" loc="(300,160)" name="ALU"/>
-    <comp lib="0" loc="(60,260)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(30,430)" name="Clock"/>
-    <comp lib="7" loc="(720,150)" name="Memory"/>
-    <comp lib="0" loc="(100,120)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(270,50)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
   </circuit>
 </project>
