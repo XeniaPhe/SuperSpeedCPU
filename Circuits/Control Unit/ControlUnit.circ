@@ -65,38 +65,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(170,150)" to="(170,200)"/>
-    <wire from="(290,230)" to="(290,300)"/>
-    <wire from="(170,70)" to="(170,150)"/>
     <wire from="(100,230)" to="(130,230)"/>
+    <wire from="(290,150)" to="(290,200)"/>
+    <wire from="(290,240)" to="(290,300)"/>
     <wire from="(170,300)" to="(290,300)"/>
     <wire from="(170,150)" to="(290,150)"/>
-    <wire from="(290,150)" to="(290,190)"/>
-    <wire from="(170,300)" to="(170,410)"/>
+    <wire from="(170,300)" to="(170,340)"/>
     <wire from="(170,240)" to="(170,300)"/>
-    <wire from="(170,410)" to="(190,410)"/>
+    <wire from="(170,340)" to="(190,340)"/>
     <wire from="(80,210)" to="(130,210)"/>
-    <comp lib="0" loc="(190,410)" name="Pin">
+    <comp lib="11" loc="(170,240)" name="10BitRegister">
+      <a name="label" val="PC"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="10" loc="(290,200)" name="10BitIncrementer">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(80,210)" name="Clock"/>
+    <comp lib="0" loc="(100,230)" name="Constant"/>
+    <comp lib="0" loc="(190,340)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="10"/>
       <a name="pull" val="down"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(170,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-    </comp>
-    <comp lib="10" loc="(290,190)" name="10BitIncrementer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(80,210)" name="Clock"/>
-    <comp lib="0" loc="(100,230)" name="Constant"/>
-    <comp lib="11" loc="(170,240)" name="10BitRegister">
-      <a name="label" val="PC"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
   </circuit>
 </project>
