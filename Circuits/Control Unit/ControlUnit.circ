@@ -21,11 +21,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Memory\Memory.circ" name="7"/>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\ALU\ALU.circ" name="8"/>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\RegisterFile.circ" name="9"/>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Adder\Incrementer\10BitIncrementer.circ" name="10"/>
-  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\10BitRegister.circ" name="11"/>
+  <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Registers\3BitRegister.circ" name="7"/>
   <main name="Control Unit"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -64,32 +60,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(170,150)" to="(170,200)"/>
-    <wire from="(100,230)" to="(130,230)"/>
-    <wire from="(290,150)" to="(290,200)"/>
-    <wire from="(290,240)" to="(290,300)"/>
-    <wire from="(170,300)" to="(290,300)"/>
-    <wire from="(170,150)" to="(290,150)"/>
-    <wire from="(170,300)" to="(170,340)"/>
-    <wire from="(170,240)" to="(170,300)"/>
-    <wire from="(170,340)" to="(190,340)"/>
-    <wire from="(80,210)" to="(130,210)"/>
-    <comp lib="11" loc="(170,240)" name="10BitRegister">
-      <a name="label" val="PC"/>
-      <a name="labelloc" val="east"/>
+    <wire from="(220,180)" to="(250,180)"/>
+    <wire from="(250,430)" to="(250,510)"/>
+    <wire from="(140,420)" to="(210,420)"/>
+    <wire from="(270,510)" to="(370,510)"/>
+    <wire from="(250,350)" to="(250,390)"/>
+    <wire from="(160,400)" to="(210,400)"/>
+    <comp lib="2" loc="(250,510)" name="Decoder">
+      <a name="selloc" val="tr"/>
+      <a name="select" val="3"/>
+      <a name="disabled" val="0"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="7" loc="(250,430)" name="3BitRegister"/>
+    <comp lib="0" loc="(160,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="C"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="10" loc="(290,200)" name="10BitIncrementer">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(220,180)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="I"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(80,210)" name="Clock"/>
-    <comp lib="0" loc="(100,230)" name="Constant"/>
-    <comp lib="0" loc="(190,340)" name="Pin">
+    <comp lib="0" loc="(370,510)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
+      <a name="label" val="F"/>
       <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
   </circuit>
 </project>
