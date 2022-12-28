@@ -64,43 +64,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(150,380)" to="(180,380)"/>
-    <wire from="(180,380)" to="(210,380)"/>
-    <wire from="(180,220)" to="(180,380)"/>
     <wire from="(250,470)" to="(250,540)"/>
-    <wire from="(410,300)" to="(410,430)"/>
-    <wire from="(240,180)" to="(300,180)"/>
-    <wire from="(90,400)" to="(210,400)"/>
-    <wire from="(90,200)" to="(90,400)"/>
-    <wire from="(250,320)" to="(370,320)"/>
-    <wire from="(250,470)" to="(370,470)"/>
-    <wire from="(370,430)" to="(370,470)"/>
-    <wire from="(110,160)" to="(110,300)"/>
-    <wire from="(110,160)" to="(130,160)"/>
-    <wire from="(70,400)" to="(90,400)"/>
-    <wire from="(250,320)" to="(250,370)"/>
-    <wire from="(370,410)" to="(370,430)"/>
+    <wire from="(400,410)" to="(460,410)"/>
+    <wire from="(150,400)" to="(210,400)"/>
+    <wire from="(250,290)" to="(250,370)"/>
+    <wire from="(380,290)" to="(380,390)"/>
+    <wire from="(380,430)" to="(380,470)"/>
     <wire from="(250,540)" to="(260,540)"/>
-    <wire from="(110,300)" to="(410,300)"/>
-    <wire from="(370,320)" to="(370,370)"/>
-    <wire from="(90,200)" to="(130,200)"/>
-    <wire from="(370,430)" to="(410,430)"/>
+    <wire from="(70,380)" to="(210,380)"/>
+    <wire from="(250,470)" to="(380,470)"/>
+    <wire from="(250,290)" to="(380,290)"/>
     <wire from="(250,410)" to="(250,470)"/>
-    <comp lib="11" loc="(250,410)" name="10BitRegister">
-      <a name="label" val="PC"/>
-      <a name="labelloc" val="east"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="10" loc="(370,370)" name="10BitIncrementer">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(240,180)" name="Memory"/>
-    <comp lib="0" loc="(70,400)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="Fetch"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
     <comp lib="0" loc="(260,540)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -109,6 +83,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="pull" val="down"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(150,380)" name="Clock"/>
+    <comp lib="0" loc="(150,400)" name="Clock"/>
+    <comp lib="10" loc="(380,390)" name="10BitIncrementer">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(460,410)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="11" loc="(250,410)" name="10BitRegister">
+      <a name="label" val="PC"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(70,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="Fetch"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
   </circuit>
 </project>
