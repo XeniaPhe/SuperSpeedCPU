@@ -99,6 +99,7 @@ namespace SSCPU
 
         public override string ToString()
         {
+            Console.WriteLine(assembledInstruction.ToString());
             return Convert.ToInt32(assembledInstruction.ToString(), 2).ToString("X5");
         }
     }

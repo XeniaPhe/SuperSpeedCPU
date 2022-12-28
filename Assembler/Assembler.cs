@@ -41,7 +41,6 @@ namespace SSCPU
             }
 
             WriteToOutputFile(args[1], machineCode);
-            Console.WriteLine(machineCode);
         }
 
         private static string Assemble(string[] ops)
