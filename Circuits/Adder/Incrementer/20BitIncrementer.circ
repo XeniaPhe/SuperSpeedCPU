@@ -64,7 +64,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <rect fill="none" height="43" stroke="#000000" width="44" x="139" y="120"/>
       <text font-family="SansSerif" font-size="24" font-weight="bold" text-anchor="middle" x="161" y="149">++</text>
       <circ-port height="8" pin="370,730" width="8" x="136" y="136"/>
-      <circ-port height="10" pin="1460,530" width="10" x="175" y="135"/>
+      <circ-port height="10" pin="1460,530" width="10" x="175" y="125"/>
+      <circ-port height="10" pin="1540,820" width="10" x="175" y="145"/>
       <circ-anchor facing="east" height="6" width="6" x="177" y="137"/>
     </appear>
     <wire from="(1030,670)" to="(1080,670)"/>
@@ -142,6 +143,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(390,440)" to="(400,440)"/>
     <wire from="(740,580)" to="(740,700)"/>
     <wire from="(1280,590)" to="(1280,750)"/>
+    <wire from="(1380,820)" to="(1540,820)"/>
     <wire from="(390,710)" to="(790,710)"/>
     <wire from="(1030,540)" to="(1440,540)"/>
     <wire from="(1030,680)" to="(1040,680)"/>
@@ -240,14 +242,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(730,560)" to="(740,560)"/>
     <wire from="(540,490)" to="(550,490)"/>
     <wire from="(530,480)" to="(540,480)"/>
-    <comp lib="0" loc="(370,730)" name="Splitter">
+    <comp lib="7" loc="(930,630)" name="Half Adder"/>
+    <comp lib="7" loc="(630,510)" name="Half Adder"/>
+    <comp lib="0" loc="(1460,530)" name="Splitter">
+      <a name="facing" val="west"/>
       <a name="fanout" val="20"/>
       <a name="incoming" val="20"/>
       <a name="appear" val="legacy"/>
     </comp>
+    <comp lib="0" loc="(380,430)" name="Constant"/>
     <comp lib="7" loc="(1380,810)" name="Half Adder"/>
+    <comp lib="7" loc="(1130,710)" name="Half Adder"/>
+    <comp lib="7" loc="(1230,750)" name="Half Adder"/>
+    <comp lib="7" loc="(1080,690)" name="Half Adder"/>
+    <comp lib="7" loc="(1330,790)" name="Half Adder"/>
+    <comp lib="7" loc="(780,570)" name="Half Adder"/>
+    <comp lib="7" loc="(430,430)" name="Half Adder"/>
     <comp lib="7" loc="(1030,670)" name="Half Adder"/>
-    <comp lib="7" loc="(930,630)" name="Half Adder"/>
+    <comp lib="7" loc="(880,610)" name="Half Adder"/>
     <comp lib="0" loc="(370,730)" name="Pin">
       <a name="width" val="20"/>
       <a name="tristate" val="false"/>
@@ -255,39 +267,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="I"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="7" loc="(1180,730)" name="Half Adder"/>
-    <comp lib="7" loc="(1130,710)" name="Half Adder"/>
-    <comp lib="7" loc="(430,430)" name="Half Adder"/>
-    <comp lib="7" loc="(980,650)" name="Half Adder"/>
-    <comp lib="7" loc="(730,550)" name="Half Adder"/>
-    <comp lib="7" loc="(1330,790)" name="Half Adder"/>
-    <comp lib="7" loc="(1280,770)" name="Half Adder"/>
-    <comp lib="7" loc="(480,450)" name="Half Adder"/>
     <comp lib="7" loc="(580,490)" name="Half Adder"/>
-    <comp lib="0" loc="(380,430)" name="Constant"/>
-    <comp lib="7" loc="(680,530)" name="Half Adder"/>
-    <comp lib="0" loc="(1460,530)" name="Splitter">
-      <a name="facing" val="west"/>
+    <comp lib="7" loc="(980,650)" name="Half Adder"/>
+    <comp lib="0" loc="(370,730)" name="Splitter">
       <a name="fanout" val="20"/>
       <a name="incoming" val="20"/>
       <a name="appear" val="legacy"/>
     </comp>
-    <comp lib="7" loc="(530,470)" name="Half Adder"/>
-    <comp lib="7" loc="(880,610)" name="Half Adder"/>
-    <comp lib="7" loc="(780,570)" name="Half Adder"/>
-    <comp lib="7" loc="(1230,750)" name="Half Adder"/>
-    <comp lib="7" loc="(1080,690)" name="Half Adder"/>
-    <comp lib="7" loc="(630,510)" name="Half Adder"/>
+    <comp lib="7" loc="(730,550)" name="Half Adder"/>
+    <comp lib="7" loc="(1280,770)" name="Half Adder"/>
+    <comp lib="0" loc="(1540,820)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="Overflow"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="7" loc="(1180,730)" name="Half Adder"/>
     <comp lib="0" loc="(1460,530)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="20"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="O"/>
+      <a name="label" val="S"/>
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
+    <comp lib="7" loc="(530,470)" name="Half Adder"/>
+    <comp lib="7" loc="(680,530)" name="Half Adder"/>
     <comp lib="7" loc="(830,590)" name="Half Adder"/>
+    <comp lib="7" loc="(480,450)" name="Half Adder"/>
   </circuit>
 </project>

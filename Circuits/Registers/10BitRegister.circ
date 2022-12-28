@@ -68,7 +68,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="8" pin="170,460" width="8" x="116" y="126"/>
       <circ-port height="8" pin="740,160" width="8" x="156" y="96"/>
       <circ-port height="10" pin="740,590" width="10" x="155" y="135"/>
-      <circ-anchor facing="east" height="6" width="6" x="157" y="137"/>
+      <circ-anchor facing="south" height="6" width="6" x="157" y="137"/>
     </appear>
     <wire from="(170,430)" to="(290,430)"/>
     <wire from="(710,180)" to="(710,260)"/>
@@ -196,24 +196,48 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(780,410)" to="(780,460)"/>
     <wire from="(830,300)" to="(830,350)"/>
     <wire from="(1100,240)" to="(1100,350)"/>
-    <comp lib="7" loc="(1070,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="7" loc="(1160,350)" name="RisingEdgeTriggeredDFlipFlop"/>
-    <comp lib="0" loc="(170,430)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="C"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="7" loc="(530,350)" name="RisingEdgeTriggeredDFlipFlop"/>
-    <comp lib="7" loc="(440,350)" name="RisingEdgeTriggeredDFlipFlop"/>
+    <comp lib="7" loc="(890,350)" name="RisingEdgeTriggeredDFlipFlop"/>
+    <comp lib="7" loc="(710,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="0" loc="(170,460)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="E"/>
+      <a name="label" val="W-Enable"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
+    <comp lib="0" loc="(740,160)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="I"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(740,590)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+      <a name="appear" val="legacy"/>
+    </comp>
+    <comp lib="7" loc="(1070,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="7" loc="(620,350)" name="RisingEdgeTriggeredDFlipFlop"/>
+    <comp lib="7" loc="(440,350)" name="RisingEdgeTriggeredDFlipFlop"/>
+    <comp lib="0" loc="(170,430)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="7" loc="(350,350)" name="RisingEdgeTriggeredDFlipFlop"/>
+    <comp lib="7" loc="(530,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="7" loc="(980,350)" name="RisingEdgeTriggeredDFlipFlop"/>
+    <comp lib="0" loc="(740,160)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+      <a name="appear" val="legacy"/>
+    </comp>
     <comp lib="0" loc="(740,590)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
@@ -224,30 +248,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="south"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(740,590)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-      <a name="appear" val="legacy"/>
-    </comp>
-    <comp lib="7" loc="(350,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="7" loc="(800,350)" name="RisingEdgeTriggeredDFlipFlop"/>
-    <comp lib="0" loc="(740,160)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="I"/>
-      <a name="labelloc" val="north"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="7" loc="(710,350)" name="RisingEdgeTriggeredDFlipFlop"/>
-    <comp lib="0" loc="(740,160)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-      <a name="appear" val="legacy"/>
-    </comp>
-    <comp lib="7" loc="(890,350)" name="RisingEdgeTriggeredDFlipFlop"/>
   </circuit>
 </project>

@@ -272,68 +272,40 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(540,670)" to="(620,670)"/>
     <wire from="(130,230)" to="(390,230)"/>
     <wire from="(420,1090)" to="(620,1090)"/>
+    <comp lib="7" loc="(710,1700)" name="Full Adder"/>
+    <comp lib="8" loc="(670,350)" name="Half Adder"/>
     <comp lib="0" loc="(830,1760)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="O"/>
+      <a name="label" val="C-out"/>
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="7" loc="(710,1700)" name="Full Adder"/>
-    <comp lib="0" loc="(1250,1070)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+    <comp lib="7" loc="(710,930)" name="Full Adder"/>
+    <comp lib="0" loc="(110,260)" name="Pin">
       <a name="width" val="20"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="S"/>
-      <a name="labelloc" val="east"/>
+      <a name="label" val="I0"/>
       <a name="labelfont" val="SansSerif bold 24"/>
     </comp>
-    <comp lib="7" loc="(710,1420)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1490)" name="Full Adder"/>
-    <comp lib="0" loc="(1250,1070)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="20"/>
-      <a name="incoming" val="20"/>
-      <a name="appear" val="legacy"/>
-    </comp>
     <comp lib="7" loc="(710,790)" name="Full Adder"/>
-    <comp lib="7" loc="(710,440)" name="Full Adder"/>
     <comp lib="0" loc="(110,490)" name="Splitter">
       <a name="fanout" val="20"/>
       <a name="incoming" val="20"/>
       <a name="appear" val="legacy"/>
     </comp>
-    <comp lib="7" loc="(710,1630)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1000)" name="Full Adder"/>
-    <comp lib="7" loc="(710,510)" name="Full Adder"/>
     <comp lib="7" loc="(710,650)" name="Full Adder"/>
-    <comp lib="0" loc="(110,260)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="N0"/>
-      <a name="labelfont" val="SansSerif bold 24"/>
-    </comp>
-    <comp lib="7" loc="(710,1140)" name="Full Adder"/>
-    <comp lib="7" loc="(710,930)" name="Full Adder"/>
-    <comp lib="8" loc="(670,350)" name="Half Adder"/>
-    <comp lib="7" loc="(710,1280)" name="Full Adder"/>
-    <comp lib="7" loc="(710,860)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1560)" name="Full Adder"/>
     <comp lib="0" loc="(110,490)" name="Pin">
       <a name="width" val="20"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="N1"/>
+      <a name="label" val="I1"/>
       <a name="labelfont" val="SansSerif bold 24"/>
     </comp>
     <comp lib="7" loc="(710,720)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1350)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1070)" name="Full Adder"/>
-    <comp lib="7" loc="(710,1210)" name="Full Adder"/>
-    <comp lib="7" loc="(710,580)" name="Full Adder"/>
+    <comp lib="7" loc="(710,510)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1280)" name="Full Adder"/>
     <comp lib="0" loc="(110,260)" name="Splitter">
       <a name="fanout" val="20"/>
       <a name="incoming" val="20"/>
@@ -359,5 +331,33 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit18" val="1"/>
       <a name="bit19" val="0"/>
     </comp>
+    <comp lib="7" loc="(710,1350)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1000)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1560)" name="Full Adder"/>
+    <comp lib="7" loc="(710,580)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1070)" name="Full Adder"/>
+    <comp lib="0" loc="(1250,1070)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 24"/>
+    </comp>
+    <comp lib="7" loc="(710,1490)" name="Full Adder"/>
+    <comp lib="7" loc="(710,440)" name="Full Adder"/>
+    <comp lib="0" loc="(1250,1070)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="20"/>
+      <a name="incoming" val="20"/>
+      <a name="appear" val="legacy"/>
+    </comp>
+    <comp lib="7" loc="(710,860)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1630)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1210)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1420)" name="Full Adder"/>
+    <comp lib="7" loc="(710,1140)" name="Full Adder"/>
   </circuit>
 </project>

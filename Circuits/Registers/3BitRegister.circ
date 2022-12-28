@@ -68,7 +68,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="8" pin="170,460" width="8" x="116" y="126"/>
       <circ-port height="8" pin="380,270" width="8" x="156" y="96"/>
       <circ-port height="10" pin="460,510" width="10" x="155" y="135"/>
-      <circ-anchor facing="east" height="6" width="6" x="157" y="137"/>
+      <circ-anchor facing="south" height="6" width="6" x="157" y="137"/>
     </appear>
     <wire from="(370,350)" to="(370,480)"/>
     <wire from="(170,430)" to="(290,430)"/>
@@ -105,13 +105,22 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,410)" to="(330,460)"/>
     <wire from="(470,480)" to="(550,480)"/>
     <wire from="(380,290)" to="(380,350)"/>
+    <comp lib="7" loc="(350,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="0" loc="(460,510)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
+      <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(170,460)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="W-Enable"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
     <comp lib="0" loc="(380,270)" name="Splitter">
       <a name="facing" val="south"/>
@@ -119,6 +128,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="incoming" val="3"/>
       <a name="appear" val="legacy"/>
     </comp>
+    <comp lib="0" loc="(170,430)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(380,270)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="I"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="7" loc="(440,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="7" loc="(530,350)" name="RisingEdgeTriggeredDFlipFlop"/>
     <comp lib="0" loc="(460,510)" name="Splitter">
       <a name="facing" val="north"/>
@@ -126,25 +150,5 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="incoming" val="3"/>
       <a name="appear" val="legacy"/>
     </comp>
-    <comp lib="0" loc="(380,270)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-    </comp>
-    <comp lib="0" loc="(170,430)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="C"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="7" loc="(350,350)" name="RisingEdgeTriggeredDFlipFlop"/>
-    <comp lib="0" loc="(170,460)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="E"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="7" loc="(440,350)" name="RisingEdgeTriggeredDFlipFlop"/>
   </circuit>
 </project>

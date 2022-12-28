@@ -22,7 +22,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </tool>
   </lib>
   <lib desc="file#C:\Users\mtuna\Desktop\Programming Stuff\WorkSpaces\Visual Studio WorkSpace\C#\2022\SSCPU\Circuits\Bitwise Xor\20BitBitwiseXor.circ" name="7"/>
-  <main name="EqualityChecker"/>
+  <main name="EqualityComparator"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -55,15 +55,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="EqualityChecker">
-    <a name="circuit" val="EqualityChecker"/>
+  <circuit name="EqualityComparator">
+    <a name="circuit" val="EqualityComparator"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
       <rect fill="none" height="69" rx="10" ry="10" stroke="#000000" width="112" x="140" y="190"/>
       <text font-family="SansSerif" font-size="18" text-anchor="middle" x="197" y="215">EQUALITY</text>
-      <text font-family="SansSerif" font-size="18" text-anchor="middle" x="198" y="239">CHECKER</text>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="198" y="239">COMPARATOR</text>
       <circ-port height="8" pin="430,210" width="8" x="136" y="206"/>
       <circ-port height="8" pin="430,300" width="8" x="136" y="226"/>
       <circ-port height="8" pin="370,360" width="8" x="136" y="246"/>
@@ -109,11 +109,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(830,270)" to="(830,360)"/>
     <wire from="(670,170)" to="(780,170)"/>
     <wire from="(610,230)" to="(720,230)"/>
-    <wire from="(610,280)" to="(780,280)"/>
-    <wire from="(610,300)" to="(780,300)"/>
     <wire from="(610,240)" to="(780,240)"/>
     <wire from="(610,260)" to="(780,260)"/>
     <wire from="(610,320)" to="(780,320)"/>
+    <wire from="(610,280)" to="(780,280)"/>
+    <wire from="(610,300)" to="(780,300)"/>
     <wire from="(830,230)" to="(850,230)"/>
     <wire from="(830,270)" to="(850,270)"/>
     <wire from="(430,210)" to="(450,210)"/>
@@ -125,45 +125,45 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(610,200)" to="(690,200)"/>
     <wire from="(640,140)" to="(780,140)"/>
     <comp lib="7" loc="(580,240)" name="20BitBitwiseXor"/>
+    <comp lib="1" loc="(830,230)" name="OR Gate">
+      <a name="inputs" val="20"/>
+    </comp>
+    <comp lib="1" loc="(420,360)" name="NOT Gate"/>
+    <comp lib="0" loc="(430,210)" name="Pin">
+      <a name="width" val="20"/>
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="I0"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
     <comp lib="1" loc="(920,250)" name="XNOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(420,360)" name="NOT Gate"/>
-    <comp lib="0" loc="(590,240)" name="Splitter">
-      <a name="fanout" val="20"/>
-      <a name="incoming" val="20"/>
-      <a name="appear" val="legacy"/>
+    <comp lib="0" loc="(370,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="BE-Select"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
     <comp lib="0" loc="(940,250)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="R"/>
+      <a name="label" val="S"/>
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(370,360)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="S"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
+    <comp lib="0" loc="(590,240)" name="Splitter">
+      <a name="fanout" val="20"/>
+      <a name="incoming" val="20"/>
+      <a name="appear" val="legacy"/>
     </comp>
     <comp lib="0" loc="(430,300)" name="Pin">
       <a name="width" val="20"/>
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="N1"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="1" loc="(830,230)" name="OR Gate">
-      <a name="inputs" val="20"/>
-    </comp>
-    <comp lib="0" loc="(430,210)" name="Pin">
-      <a name="width" val="20"/>
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="N0"/>
+      <a name="label" val="I1"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
   </circuit>
