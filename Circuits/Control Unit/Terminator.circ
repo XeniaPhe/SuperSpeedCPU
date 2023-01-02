@@ -67,122 +67,116 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <polyline fill="none" points="70,110 81,120 70,130" stroke="#000000"/>
       <text font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="187" y="124">Halt</text>
       <polyline fill="none" points="183,100 159,140" stroke="#000000"/>
-      <circ-port height="8" pin="290,220" width="8" x="66" y="116"/>
+      <circ-port height="8" pin="290,200" width="8" x="66" y="106"/>
       <circ-port height="8" pin="290,300" width="8" x="86" y="136"/>
       <circ-port height="8" pin="290,340" width="8" x="106" y="136"/>
-      <circ-port height="8" pin="290,440" width="8" x="176" y="136"/>
-      <circ-port height="8" pin="290,480" width="8" x="156" y="136"/>
+      <circ-port height="8" pin="290,470" width="8" x="176" y="136"/>
+      <circ-port height="8" pin="290,510" width="8" x="156" y="136"/>
       <circ-port height="10" pin="960,370" width="10" x="195" y="115"/>
       <circ-port height="8" pin="290,390" width="8" x="126" y="136"/>
+      <circ-port height="8" pin="290,250" width="8" x="66" y="126"/>
       <circ-anchor facing="east" height="6" width="6" x="197" y="117"/>
     </appear>
-    <wire from="(290,220)" to="(350,220)"/>
-    <wire from="(350,260)" to="(350,580)"/>
-    <wire from="(530,490)" to="(580,490)"/>
+    <wire from="(290,200)" to="(350,200)"/>
+    <wire from="(320,250)" to="(320,320)"/>
     <wire from="(900,370)" to="(960,370)"/>
     <wire from="(650,280)" to="(650,350)"/>
     <wire from="(290,390)" to="(460,390)"/>
-    <wire from="(740,410)" to="(780,410)"/>
-    <wire from="(370,540)" to="(370,620)"/>
+    <wire from="(400,280)" to="(400,300)"/>
+    <wire from="(290,470)" to="(460,470)"/>
     <wire from="(370,220)" to="(370,300)"/>
     <wire from="(830,330)" to="(830,350)"/>
     <wire from="(830,390)" to="(830,410)"/>
-    <wire from="(460,440)" to="(460,470)"/>
-    <wire from="(370,620)" to="(410,620)"/>
-    <wire from="(350,580)" to="(390,580)"/>
-    <wire from="(370,300)" to="(410,300)"/>
+    <wire from="(320,320)" to="(420,320)"/>
+    <wire from="(460,540)" to="(460,570)"/>
+    <wire from="(350,260)" to="(350,610)"/>
     <wire from="(350,260)" to="(390,260)"/>
-    <wire from="(560,450)" to="(580,450)"/>
+    <wire from="(600,540)" to="(600,560)"/>
+    <wire from="(770,390)" to="(770,410)"/>
+    <wire from="(790,390)" to="(790,430)"/>
+    <wire from="(430,570)" to="(460,570)"/>
+    <wire from="(290,250)" to="(320,250)"/>
     <wire from="(740,370)" to="(760,370)"/>
     <wire from="(740,330)" to="(760,330)"/>
     <wire from="(720,370)" to="(740,370)"/>
-    <wire from="(370,540)" to="(390,540)"/>
+    <wire from="(370,650)" to="(400,650)"/>
     <wire from="(460,370)" to="(670,370)"/>
     <wire from="(370,220)" to="(390,220)"/>
-    <wire from="(460,470)" to="(480,470)"/>
-    <wire from="(460,510)" to="(480,510)"/>
+    <wire from="(620,480)" to="(650,480)"/>
+    <wire from="(420,280)" to="(420,320)"/>
     <wire from="(460,220)" to="(460,260)"/>
     <wire from="(460,300)" to="(460,340)"/>
-    <wire from="(650,390)" to="(650,450)"/>
+    <wire from="(320,430)" to="(790,430)"/>
+    <wire from="(290,510)" to="(370,510)"/>
+    <wire from="(320,430)" to="(320,670)"/>
+    <wire from="(370,510)" to="(370,570)"/>
     <wire from="(530,280)" to="(650,280)"/>
-    <wire from="(780,410)" to="(830,410)"/>
-    <wire from="(410,600)" to="(410,620)"/>
-    <wire from="(290,440)" to="(460,440)"/>
-    <wire from="(410,280)" to="(410,300)"/>
+    <wire from="(530,520)" to="(580,520)"/>
+    <wire from="(770,410)" to="(830,410)"/>
+    <wire from="(650,390)" to="(650,480)"/>
     <wire from="(290,340)" to="(460,340)"/>
+    <wire from="(400,630)" to="(400,650)"/>
     <wire from="(460,370)" to="(460,390)"/>
-    <wire from="(460,510)" to="(460,540)"/>
-    <wire from="(600,510)" to="(600,530)"/>
-    <wire from="(780,390)" to="(780,410)"/>
+    <wire from="(370,570)" to="(370,650)"/>
+    <wire from="(460,470)" to="(460,500)"/>
+    <wire from="(320,670)" to="(420,670)"/>
+    <wire from="(350,610)" to="(390,610)"/>
     <wire from="(830,350)" to="(850,350)"/>
     <wire from="(830,390)" to="(850,390)"/>
     <wire from="(740,370)" to="(740,410)"/>
     <wire from="(740,330)" to="(740,370)"/>
-    <wire from="(430,540)" to="(460,540)"/>
     <wire from="(430,220)" to="(460,220)"/>
+    <wire from="(560,480)" to="(580,480)"/>
     <wire from="(650,350)" to="(670,350)"/>
     <wire from="(650,390)" to="(670,390)"/>
-    <wire from="(620,450)" to="(650,450)"/>
+    <wire from="(370,300)" to="(400,300)"/>
+    <wire from="(740,410)" to="(770,410)"/>
+    <wire from="(370,570)" to="(390,570)"/>
     <wire from="(460,260)" to="(480,260)"/>
     <wire from="(460,300)" to="(480,300)"/>
-    <wire from="(350,220)" to="(350,260)"/>
+    <wire from="(320,320)" to="(320,430)"/>
+    <wire from="(460,500)" to="(480,500)"/>
+    <wire from="(460,540)" to="(480,540)"/>
     <wire from="(800,330)" to="(830,330)"/>
-    <wire from="(290,480)" to="(370,480)"/>
+    <wire from="(420,630)" to="(420,670)"/>
     <wire from="(290,300)" to="(370,300)"/>
-    <wire from="(370,480)" to="(370,540)"/>
-    <comp lib="1" loc="(530,490)" name="AND Gate">
+    <wire from="(350,200)" to="(350,260)"/>
+    <comp lib="0" loc="(290,250)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="t=0"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(900,370)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(530,280)" name="AND Gate">
+    <comp lib="1" loc="(530,520)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
+    <comp lib="0" loc="(290,510)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="PC-Overflow"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(290,470)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="Instruction-End"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(720,370)" name="OR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(560,480)" name="Constant"/>
     <comp lib="0" loc="(290,300)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
       <a name="label" val="Decode"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="0" loc="(290,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="Stack-Overflow"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="0" loc="(290,340)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="Halt-Instruction"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="8" loc="(430,220)" name="RisingEdgeTriggeredDFlipFlop">
-      <a name="label" val="Started"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="0" loc="(290,480)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="PC-Overflow"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="1" loc="(720,370)" name="OR Gate">
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="0" loc="(600,530)" name="Constant">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(560,450)" name="Constant"/>
-    <comp lib="7" loc="(620,450)" name="FallingEdgeTriggeredDFlipFlop">
-      <a name="label" val="Delay"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="8" loc="(430,540)" name="RisingEdgeTriggeredDFlipFlop">
+    <comp lib="8" loc="(430,570)" name="RisingEdgeTriggeredDFlipFlop">
       <a name="label" val="PCOverflowed"/>
-      <a name="labelfont" val="SansSerif bold 18"/>
-    </comp>
-    <comp lib="0" loc="(290,220)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="pull" val="down"/>
-      <a name="label" val="clk"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
     <comp lib="0" loc="(960,370)" name="Pin">
@@ -194,17 +188,40 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
-    <comp lib="1" loc="(900,370)" name="OR Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(600,560)" name="Constant">
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(290,440)" name="Pin">
+    <comp lib="0" loc="(290,390)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="pull" val="down"/>
-      <a name="label" val="Instruction-End"/>
+      <a name="label" val="Stack-Overflow"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="0" loc="(290,200)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="8" loc="(430,220)" name="RisingEdgeTriggeredDFlipFlop">
+      <a name="label" val="Started"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="7" loc="(620,480)" name="FallingEdgeTriggeredDFlipFlop">
+      <a name="label" val="Delay"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
     <comp lib="8" loc="(800,330)" name="RisingEdgeTriggeredDFlipFlop">
       <a name="label" val="Halted"/>
+      <a name="labelfont" val="SansSerif bold 18"/>
+    </comp>
+    <comp lib="1" loc="(530,280)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(290,340)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="pull" val="down"/>
+      <a name="label" val="Halt-Instruction"/>
       <a name="labelfont" val="SansSerif bold 18"/>
     </comp>
   </circuit>
