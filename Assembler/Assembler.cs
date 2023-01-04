@@ -12,13 +12,13 @@ namespace SSCPU
 
         public static void Main(string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 3)
             {
-                Console.WriteLine("You should specify one input and one output file");
+                Console.WriteLine("You should specify one input and two output files");
                 return;
             }
 
-            if (!(File.Exists(args[0]) && File.Exists(args[1])))
+            if (!(File.Exists(args[0]) && File.Exists(args[1]) && File.Exists(args[2])))
             {
                 Console.WriteLine("File doesn't exist!");
                 return;
@@ -26,10 +26,12 @@ namespace SSCPU
 
             string[] ops = ReadInputFile(args[0]);
             string machineCode = "";
+            StringBuilder logisimFile = new StringBuilder("v2.0 raw\n");
 
             try
             {
                 machineCode = Assemble(ops);
+                logisimFile.Append(machineCode);
 
                 if (machineCode is null)
                     return;
@@ -41,6 +43,7 @@ namespace SSCPU
             }
 
             WriteToOutputFile(args[1], machineCode);
+            WriteToOutputFile(args[2], logisimFile.ToString());
         }
 
         private static string Assemble(string[] ops)
