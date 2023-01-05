@@ -16,9 +16,9 @@ module register_file(
 
             always @(*) begin
                 if(r1_select == i)
-                    read1 <= readi;
+                    read1 = readi;
                 if(r2_select == i)
-                    read2 <= readi;
+                    read2 = readi;
             end
         end
     endgenerate
