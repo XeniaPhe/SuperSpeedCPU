@@ -1,4 +1,4 @@
-`include "twenty_bit_bitwise_or.v"
+`include "Bitwise Or/twenty_bit_bitwise_or.v"
 
 module twenty_bit_bitwise_or_tb;
 

@@ -1,4 +1,4 @@
-`include "full_adder.v"
+`include "Adder/Full Adder/full_adder.v"
 
 module full_adder_tb;
     reg a, b, c;

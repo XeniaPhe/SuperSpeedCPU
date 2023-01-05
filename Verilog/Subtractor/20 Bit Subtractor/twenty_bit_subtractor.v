@@ -1,5 +1,4 @@
-`include "../Full Subtractor/full_subtractor.v"
-
+`include "Subtractor/Full Subtractor/full_subtractor.v"
 
 module twenty_bit_subtractor(
     input [19:0] i0, i1,

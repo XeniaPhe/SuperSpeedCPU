@@ -1,4 +1,4 @@
-`include "ten_bit_decrementer.v"
+`include "Subtractor/Decrementer/ten_bit_decrementer.v"
 
 module ten_bit_decrementer_tb;
 

@@ -1,4 +1,4 @@
-`include "equality_comparator.v"
+`include "Equality Comparator/equality_comparator.v"
 
 module equality_comparator_tb;
     reg [19:0] i0, i1;

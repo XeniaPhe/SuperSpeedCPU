@@ -1,4 +1,4 @@
-`include "full_subtractor.v"
+`include "Subtractor/Full Subtractor/full_subtractor.v"
 
 module full_subtractor_tb;
     reg i0, i1, bin;

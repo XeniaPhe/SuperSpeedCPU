@@ -1,4 +1,4 @@
-`include "../Half Adder/half_adder.v"
+`include "Adder/Half Adder/half_adder.v"
 
 module full_adder(i0, i1, cin, s, cout);
     input i0, i1, cin;

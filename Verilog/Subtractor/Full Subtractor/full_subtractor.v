@@ -1,4 +1,4 @@
-`include "../Half Subtractor/half_subtractor.v"
+`include "Subtractor/Half Subtractor/half_subtractor.v"
 
 module full_subtractor(
     input i0, i1, bin,

@@ -1,4 +1,4 @@
-`include "../Half Subtractor/half_subtractor.v"
+`include "Subtractor/Half Subtractor/half_subtractor.v"
 
 module ten_bit_decrementer(
     input [9:0] a,

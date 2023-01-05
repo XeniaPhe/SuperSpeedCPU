@@ -1,4 +1,4 @@
-`include "../Bitwise Xor/twenty_bit_bitwise_xor.v"
+`include "Bitwise Xor/twenty_bit_bitwise_xor.v"
 
 module equality_comparator(
     input [19:0] i0, i1,

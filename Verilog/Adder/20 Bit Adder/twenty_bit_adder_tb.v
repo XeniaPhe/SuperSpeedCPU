@@ -1,4 +1,4 @@
-`include "twenty_bit_adder.v"
+`include "Adder/20 Bit Adder/twenty_bit_adder.v"
 
 module twenty_bit_adder_tb;
     reg [19:0] i0, i1;

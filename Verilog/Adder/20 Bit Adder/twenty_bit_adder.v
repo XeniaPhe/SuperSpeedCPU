@@ -1,4 +1,4 @@
-`include "../Full Adder/full_adder.v"
+`include "Adder/Full Adder/full_adder.v"
 
 module twenty_bit_adder(
     input [19:0] i0, i1, 

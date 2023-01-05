@@ -1,4 +1,4 @@
-`include "ten_bit_incrementer.v"
+`include "Adder/Incrementer/ten_bit_incrementer.v"
 
 module ten_bit_incrementer_tb;
     reg [9:0] a;

@@ -1,4 +1,4 @@
-`include "twenty_bit_bitwise_xor.v"
+`include "Bitwise Xor/twenty_bit_bitwise_xor.v"
 
 module twenty_bit_bitwise_xor_tb;
 

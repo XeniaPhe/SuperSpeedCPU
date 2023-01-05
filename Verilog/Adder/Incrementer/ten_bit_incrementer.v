@@ -1,10 +1,9 @@
-`include "../Half Adder/half_adder.v"
+`include "Adder/Half Adder/half_adder.v"
 
 module ten_bit_incrementer(
     input [9:0] a,
     output [9:0] s,
-    output o
-);
+    output o);
 
     wire [9:0] c;
 
