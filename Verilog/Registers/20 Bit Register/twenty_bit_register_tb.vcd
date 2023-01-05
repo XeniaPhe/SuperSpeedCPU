@@ -1,0 +1,381 @@
+$date
+	Thu Jan 05 23:03:18 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module twenty_bit_register_tb $end
+$var wire 20 ! q [19:0] $end
+$var reg 1 " clk $end
+$var reg 20 # d [19:0] $end
+$var reg 1 $ reset $end
+$var reg 1 % w $end
+$scope module regs $end
+$var wire 1 " clk $end
+$var wire 20 & d [19:0] $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var wire 20 ' q [19:0] $end
+$scope begin genblk1[0] $end
+$var parameter 2 ( i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 ) d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 * q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 + i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 , d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 - q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 . i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 / d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 0 q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 1 i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 2 d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 3 q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 4 i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 5 d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 6 q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 7 i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 8 d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 9 q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 : i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 ; d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 < q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 = i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 > d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 ? q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[8] $end
+$var parameter 5 @ i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 A d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 B q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[9] $end
+$var parameter 5 C i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 D d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 E q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[10] $end
+$var parameter 5 F i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 G d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 H q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[11] $end
+$var parameter 5 I i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 J d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 K q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[12] $end
+$var parameter 5 L i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 M d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 N q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[13] $end
+$var parameter 5 O i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 P d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 Q q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[14] $end
+$var parameter 5 R i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 S d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 T q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[15] $end
+$var parameter 5 U i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 V d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 W q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[16] $end
+$var parameter 6 X i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 Y d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 Z q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[17] $end
+$var parameter 6 [ i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 \ d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 ] q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[18] $end
+$var parameter 6 ^ i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 _ d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 ` q $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[19] $end
+$var parameter 6 a i $end
+$scope module flipflopi $end
+$var wire 1 " clk $end
+$var wire 1 b d $end
+$var wire 1 $ reset $end
+$var wire 1 % w $end
+$var reg 1 c q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10011 a
+b10010 ^
+b10001 [
+b10000 X
+b1111 U
+b1110 R
+b1101 O
+b1100 L
+b1011 I
+b1010 F
+b1001 C
+b1000 @
+b111 =
+b110 :
+b101 7
+b100 4
+b11 1
+b10 .
+b1 +
+b0 (
+$end
+#0
+$dumpvars
+0c
+0b
+0`
+0_
+0]
+0\
+0Z
+0Y
+0W
+0V
+0T
+0S
+0Q
+0P
+0N
+0M
+0K
+0J
+0H
+0G
+0E
+0D
+0B
+0A
+0?
+0>
+0<
+0;
+09
+18
+06
+05
+03
+12
+00
+1/
+0-
+0,
+0*
+1)
+b0 '
+b101101 &
+1%
+1$
+b101101 #
+0"
+b0 !
+$end
+#5
+19
+13
+10
+b101101 !
+b101101 '
+1*
+0$
+#10
+0*
+1-
+03
+b110110 !
+b110110 '
+16
+0)
+1,
+02
+15
+1"
+b110110 #
+b110110 &
+#15
+0"
+#20
+0,
+05
+1;
+1"
+0%
+b1100100 #
+b1100100 &
+#25
+0"
+#30
+1*
+0-
+06
+b1100101 !
+b1100101 '
+1<
+1)
+1"
+1%
+b1100101 #
+b1100101 &
+#35
+0"
+#40
+13
+b1101001 !
+b1101001 '
+00
+0/
+12
+1"
+b1101001 #
+b1101001 &
+#45
+0"
+#50
+0)
+02
+08
+0;
+1"
+0%
+b0 #
+b0 &
+#55
+0"
+#60
+0<
+09
+03
+b0 !
+b0 '
+0*
+1"
+1%
+#65
+0"
+#70
+1"
