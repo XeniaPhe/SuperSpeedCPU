@@ -1,0 +1,253 @@
+$date
+	Thu Jan 05 06:01:04 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ten_bit_incrementer_tb $end
+$var wire 10 ! s [9:0] $end
+$var wire 1 " o $end
+$var reg 10 # a [9:0] $end
+$scope module incr $end
+$var wire 10 $ a [9:0] $end
+$var wire 10 % s [9:0] $end
+$var wire 1 " o $end
+$var wire 10 & c [9:0] $end
+$scope begin genblk1[1] $end
+$var parameter 2 ' i $end
+$scope module hai $end
+$var wire 1 ( cout $end
+$var wire 1 ) i0 $end
+$var wire 1 * i1 $end
+$var wire 1 + s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 , i $end
+$scope module hai $end
+$var wire 1 - cout $end
+$var wire 1 . i0 $end
+$var wire 1 / i1 $end
+$var wire 1 0 s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 1 i $end
+$scope module hai $end
+$var wire 1 2 cout $end
+$var wire 1 3 i0 $end
+$var wire 1 4 i1 $end
+$var wire 1 5 s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 6 i $end
+$scope module hai $end
+$var wire 1 7 cout $end
+$var wire 1 8 i0 $end
+$var wire 1 9 i1 $end
+$var wire 1 : s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 ; i $end
+$scope module hai $end
+$var wire 1 < cout $end
+$var wire 1 = i0 $end
+$var wire 1 > i1 $end
+$var wire 1 ? s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 @ i $end
+$scope module hai $end
+$var wire 1 A cout $end
+$var wire 1 B i0 $end
+$var wire 1 C i1 $end
+$var wire 1 D s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 E i $end
+$scope module hai $end
+$var wire 1 F cout $end
+$var wire 1 G i0 $end
+$var wire 1 H i1 $end
+$var wire 1 I s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[8] $end
+$var parameter 5 J i $end
+$scope module hai $end
+$var wire 1 K cout $end
+$var wire 1 L i0 $end
+$var wire 1 M i1 $end
+$var wire 1 N s $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[9] $end
+$var parameter 5 O i $end
+$scope module hai $end
+$var wire 1 P cout $end
+$var wire 1 Q i0 $end
+$var wire 1 R i1 $end
+$var wire 1 S s $end
+$upscope $end
+$upscope $end
+$scope module ha0 $end
+$var wire 1 T cout $end
+$var wire 1 U i0 $end
+$var wire 1 V i1 $end
+$var wire 1 W s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 O
+b1000 J
+b111 E
+b110 @
+b101 ;
+b100 6
+b11 1
+b10 ,
+b1 '
+$end
+#0
+$dumpvars
+1W
+0V
+1U
+0T
+0S
+0R
+0Q
+0P
+0N
+0M
+0L
+0K
+0I
+0H
+0G
+0F
+0D
+0C
+0B
+0A
+0?
+0>
+0=
+0<
+0:
+09
+08
+07
+05
+04
+03
+02
+00
+0/
+0.
+0-
+0+
+0*
+0)
+0(
+b0 &
+b1 %
+b0 $
+b0 #
+0"
+b1 !
+$end
+#1
+1+
+1)
+b10 !
+b10 %
+0W
+b1 &
+1T
+1V
+b1 #
+b1 $
+#2
+00
+0.
+0)
+1+
+0(
+b11 !
+b11 %
+1W
+b0 &
+0T
+1*
+0V
+b10 #
+b10 $
+#3
+10
+15
+1:
+1?
+1D
+1I
+1N
+b1111111111 !
+b1111111111 %
+1S
+1/
+14
+19
+1>
+1C
+1H
+1M
+1R
+b1111111110 #
+b1111111110 $
+#4
+1"
+0S
+1P
+1Q
+0N
+1K
+1L
+0I
+1F
+1G
+0D
+1A
+1B
+0?
+1<
+1=
+0:
+17
+18
+05
+12
+13
+00
+1-
+1.
+0+
+1(
+1)
+b0 !
+b0 %
+0W
+b1111111111 &
+1T
+1V
+b1111111111 #
+b1111111111 $

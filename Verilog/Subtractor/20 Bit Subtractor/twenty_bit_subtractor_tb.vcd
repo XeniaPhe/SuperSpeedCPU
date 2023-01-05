@@ -1,0 +1,929 @@
+$date
+	Thu Jan 05 06:51:22 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module twenty_bit_subtractor_tb $end
+$var wire 20 ! d [19:0] $end
+$var wire 1 " bout $end
+$var reg 20 # i0 [19:0] $end
+$var reg 20 $ i1 [19:0] $end
+$scope module subtractor $end
+$var wire 20 % i0 [19:0] $end
+$var wire 20 & i1 [19:0] $end
+$var wire 20 ' d [19:0] $end
+$var wire 1 " bout $end
+$var wire 20 ( b [19:0] $end
+$scope begin genblk1[1] $end
+$var parameter 2 ) i $end
+$scope module fsi $end
+$var wire 1 * bin $end
+$var wire 1 + bout $end
+$var wire 1 , i0 $end
+$var wire 1 - i1 $end
+$var wire 1 . d1 $end
+$var wire 1 / d $end
+$var wire 1 0 b2 $end
+$var wire 1 1 b1 $end
+$scope module hs0 $end
+$var wire 1 1 bout $end
+$var wire 1 . d $end
+$var wire 1 , i0 $end
+$var wire 1 - i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 0 bout $end
+$var wire 1 / d $end
+$var wire 1 . i0 $end
+$var wire 1 * i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 2 i $end
+$scope module fsi $end
+$var wire 1 3 bin $end
+$var wire 1 4 bout $end
+$var wire 1 5 i0 $end
+$var wire 1 6 i1 $end
+$var wire 1 7 d1 $end
+$var wire 1 8 d $end
+$var wire 1 9 b2 $end
+$var wire 1 : b1 $end
+$scope module hs0 $end
+$var wire 1 : bout $end
+$var wire 1 7 d $end
+$var wire 1 5 i0 $end
+$var wire 1 6 i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 9 bout $end
+$var wire 1 8 d $end
+$var wire 1 7 i0 $end
+$var wire 1 3 i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 ; i $end
+$scope module fsi $end
+$var wire 1 < bin $end
+$var wire 1 = bout $end
+$var wire 1 > i0 $end
+$var wire 1 ? i1 $end
+$var wire 1 @ d1 $end
+$var wire 1 A d $end
+$var wire 1 B b2 $end
+$var wire 1 C b1 $end
+$scope module hs0 $end
+$var wire 1 C bout $end
+$var wire 1 @ d $end
+$var wire 1 > i0 $end
+$var wire 1 ? i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 B bout $end
+$var wire 1 A d $end
+$var wire 1 @ i0 $end
+$var wire 1 < i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 D i $end
+$scope module fsi $end
+$var wire 1 E bin $end
+$var wire 1 F bout $end
+$var wire 1 G i0 $end
+$var wire 1 H i1 $end
+$var wire 1 I d1 $end
+$var wire 1 J d $end
+$var wire 1 K b2 $end
+$var wire 1 L b1 $end
+$scope module hs0 $end
+$var wire 1 L bout $end
+$var wire 1 I d $end
+$var wire 1 G i0 $end
+$var wire 1 H i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 K bout $end
+$var wire 1 J d $end
+$var wire 1 I i0 $end
+$var wire 1 E i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 M i $end
+$scope module fsi $end
+$var wire 1 N bin $end
+$var wire 1 O bout $end
+$var wire 1 P i0 $end
+$var wire 1 Q i1 $end
+$var wire 1 R d1 $end
+$var wire 1 S d $end
+$var wire 1 T b2 $end
+$var wire 1 U b1 $end
+$scope module hs0 $end
+$var wire 1 U bout $end
+$var wire 1 R d $end
+$var wire 1 P i0 $end
+$var wire 1 Q i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 T bout $end
+$var wire 1 S d $end
+$var wire 1 R i0 $end
+$var wire 1 N i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 V i $end
+$scope module fsi $end
+$var wire 1 W bin $end
+$var wire 1 X bout $end
+$var wire 1 Y i0 $end
+$var wire 1 Z i1 $end
+$var wire 1 [ d1 $end
+$var wire 1 \ d $end
+$var wire 1 ] b2 $end
+$var wire 1 ^ b1 $end
+$scope module hs0 $end
+$var wire 1 ^ bout $end
+$var wire 1 [ d $end
+$var wire 1 Y i0 $end
+$var wire 1 Z i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 ] bout $end
+$var wire 1 \ d $end
+$var wire 1 [ i0 $end
+$var wire 1 W i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 _ i $end
+$scope module fsi $end
+$var wire 1 ` bin $end
+$var wire 1 a bout $end
+$var wire 1 b i0 $end
+$var wire 1 c i1 $end
+$var wire 1 d d1 $end
+$var wire 1 e d $end
+$var wire 1 f b2 $end
+$var wire 1 g b1 $end
+$scope module hs0 $end
+$var wire 1 g bout $end
+$var wire 1 d d $end
+$var wire 1 b i0 $end
+$var wire 1 c i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 f bout $end
+$var wire 1 e d $end
+$var wire 1 d i0 $end
+$var wire 1 ` i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[8] $end
+$var parameter 5 h i $end
+$scope module fsi $end
+$var wire 1 i bin $end
+$var wire 1 j bout $end
+$var wire 1 k i0 $end
+$var wire 1 l i1 $end
+$var wire 1 m d1 $end
+$var wire 1 n d $end
+$var wire 1 o b2 $end
+$var wire 1 p b1 $end
+$scope module hs0 $end
+$var wire 1 p bout $end
+$var wire 1 m d $end
+$var wire 1 k i0 $end
+$var wire 1 l i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 o bout $end
+$var wire 1 n d $end
+$var wire 1 m i0 $end
+$var wire 1 i i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[9] $end
+$var parameter 5 q i $end
+$scope module fsi $end
+$var wire 1 r bin $end
+$var wire 1 s bout $end
+$var wire 1 t i0 $end
+$var wire 1 u i1 $end
+$var wire 1 v d1 $end
+$var wire 1 w d $end
+$var wire 1 x b2 $end
+$var wire 1 y b1 $end
+$scope module hs0 $end
+$var wire 1 y bout $end
+$var wire 1 v d $end
+$var wire 1 t i0 $end
+$var wire 1 u i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 x bout $end
+$var wire 1 w d $end
+$var wire 1 v i0 $end
+$var wire 1 r i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[10] $end
+$var parameter 5 z i $end
+$scope module fsi $end
+$var wire 1 { bin $end
+$var wire 1 | bout $end
+$var wire 1 } i0 $end
+$var wire 1 ~ i1 $end
+$var wire 1 !" d1 $end
+$var wire 1 "" d $end
+$var wire 1 #" b2 $end
+$var wire 1 $" b1 $end
+$scope module hs0 $end
+$var wire 1 $" bout $end
+$var wire 1 !" d $end
+$var wire 1 } i0 $end
+$var wire 1 ~ i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 #" bout $end
+$var wire 1 "" d $end
+$var wire 1 !" i0 $end
+$var wire 1 { i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[11] $end
+$var parameter 5 %" i $end
+$scope module fsi $end
+$var wire 1 &" bin $end
+$var wire 1 '" bout $end
+$var wire 1 (" i0 $end
+$var wire 1 )" i1 $end
+$var wire 1 *" d1 $end
+$var wire 1 +" d $end
+$var wire 1 ," b2 $end
+$var wire 1 -" b1 $end
+$scope module hs0 $end
+$var wire 1 -" bout $end
+$var wire 1 *" d $end
+$var wire 1 (" i0 $end
+$var wire 1 )" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 ," bout $end
+$var wire 1 +" d $end
+$var wire 1 *" i0 $end
+$var wire 1 &" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[12] $end
+$var parameter 5 ." i $end
+$scope module fsi $end
+$var wire 1 /" bin $end
+$var wire 1 0" bout $end
+$var wire 1 1" i0 $end
+$var wire 1 2" i1 $end
+$var wire 1 3" d1 $end
+$var wire 1 4" d $end
+$var wire 1 5" b2 $end
+$var wire 1 6" b1 $end
+$scope module hs0 $end
+$var wire 1 6" bout $end
+$var wire 1 3" d $end
+$var wire 1 1" i0 $end
+$var wire 1 2" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 5" bout $end
+$var wire 1 4" d $end
+$var wire 1 3" i0 $end
+$var wire 1 /" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[13] $end
+$var parameter 5 7" i $end
+$scope module fsi $end
+$var wire 1 8" bin $end
+$var wire 1 9" bout $end
+$var wire 1 :" i0 $end
+$var wire 1 ;" i1 $end
+$var wire 1 <" d1 $end
+$var wire 1 =" d $end
+$var wire 1 >" b2 $end
+$var wire 1 ?" b1 $end
+$scope module hs0 $end
+$var wire 1 ?" bout $end
+$var wire 1 <" d $end
+$var wire 1 :" i0 $end
+$var wire 1 ;" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 >" bout $end
+$var wire 1 =" d $end
+$var wire 1 <" i0 $end
+$var wire 1 8" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[14] $end
+$var parameter 5 @" i $end
+$scope module fsi $end
+$var wire 1 A" bin $end
+$var wire 1 B" bout $end
+$var wire 1 C" i0 $end
+$var wire 1 D" i1 $end
+$var wire 1 E" d1 $end
+$var wire 1 F" d $end
+$var wire 1 G" b2 $end
+$var wire 1 H" b1 $end
+$scope module hs0 $end
+$var wire 1 H" bout $end
+$var wire 1 E" d $end
+$var wire 1 C" i0 $end
+$var wire 1 D" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 G" bout $end
+$var wire 1 F" d $end
+$var wire 1 E" i0 $end
+$var wire 1 A" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[15] $end
+$var parameter 5 I" i $end
+$scope module fsi $end
+$var wire 1 J" bin $end
+$var wire 1 K" bout $end
+$var wire 1 L" i0 $end
+$var wire 1 M" i1 $end
+$var wire 1 N" d1 $end
+$var wire 1 O" d $end
+$var wire 1 P" b2 $end
+$var wire 1 Q" b1 $end
+$scope module hs0 $end
+$var wire 1 Q" bout $end
+$var wire 1 N" d $end
+$var wire 1 L" i0 $end
+$var wire 1 M" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 P" bout $end
+$var wire 1 O" d $end
+$var wire 1 N" i0 $end
+$var wire 1 J" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[16] $end
+$var parameter 6 R" i $end
+$scope module fsi $end
+$var wire 1 S" bin $end
+$var wire 1 T" bout $end
+$var wire 1 U" i0 $end
+$var wire 1 V" i1 $end
+$var wire 1 W" d1 $end
+$var wire 1 X" d $end
+$var wire 1 Y" b2 $end
+$var wire 1 Z" b1 $end
+$scope module hs0 $end
+$var wire 1 Z" bout $end
+$var wire 1 W" d $end
+$var wire 1 U" i0 $end
+$var wire 1 V" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 Y" bout $end
+$var wire 1 X" d $end
+$var wire 1 W" i0 $end
+$var wire 1 S" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[17] $end
+$var parameter 6 [" i $end
+$scope module fsi $end
+$var wire 1 \" bin $end
+$var wire 1 ]" bout $end
+$var wire 1 ^" i0 $end
+$var wire 1 _" i1 $end
+$var wire 1 `" d1 $end
+$var wire 1 a" d $end
+$var wire 1 b" b2 $end
+$var wire 1 c" b1 $end
+$scope module hs0 $end
+$var wire 1 c" bout $end
+$var wire 1 `" d $end
+$var wire 1 ^" i0 $end
+$var wire 1 _" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 b" bout $end
+$var wire 1 a" d $end
+$var wire 1 `" i0 $end
+$var wire 1 \" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[18] $end
+$var parameter 6 d" i $end
+$scope module fsi $end
+$var wire 1 e" bin $end
+$var wire 1 f" bout $end
+$var wire 1 g" i0 $end
+$var wire 1 h" i1 $end
+$var wire 1 i" d1 $end
+$var wire 1 j" d $end
+$var wire 1 k" b2 $end
+$var wire 1 l" b1 $end
+$scope module hs0 $end
+$var wire 1 l" bout $end
+$var wire 1 i" d $end
+$var wire 1 g" i0 $end
+$var wire 1 h" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 k" bout $end
+$var wire 1 j" d $end
+$var wire 1 i" i0 $end
+$var wire 1 e" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[19] $end
+$var parameter 6 m" i $end
+$scope module fsi $end
+$var wire 1 n" bin $end
+$var wire 1 o" bout $end
+$var wire 1 p" i0 $end
+$var wire 1 q" i1 $end
+$var wire 1 r" d1 $end
+$var wire 1 s" d $end
+$var wire 1 t" b2 $end
+$var wire 1 u" b1 $end
+$scope module hs0 $end
+$var wire 1 u" bout $end
+$var wire 1 r" d $end
+$var wire 1 p" i0 $end
+$var wire 1 q" i1 $end
+$upscope $end
+$scope module hs1 $end
+$var wire 1 t" bout $end
+$var wire 1 s" d $end
+$var wire 1 r" i0 $end
+$var wire 1 n" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module hs $end
+$var wire 1 v" bout $end
+$var wire 1 w" d $end
+$var wire 1 x" i0 $end
+$var wire 1 y" i1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10011 m"
+b10010 d"
+b10001 ["
+b10000 R"
+b1111 I"
+b1110 @"
+b1101 7"
+b1100 ."
+b1011 %"
+b1010 z
+b1001 q
+b1000 h
+b111 _
+b110 V
+b101 M
+b100 D
+b11 ;
+b10 2
+b1 )
+$end
+#0
+$dumpvars
+0y"
+0x"
+0w"
+0v"
+0u"
+0t"
+0s"
+0r"
+0q"
+0p"
+0o"
+0n"
+0l"
+0k"
+0j"
+0i"
+0h"
+0g"
+0f"
+0e"
+0c"
+0b"
+0a"
+0`"
+0_"
+0^"
+0]"
+0\"
+0Z"
+0Y"
+0X"
+0W"
+0V"
+0U"
+0T"
+0S"
+0Q"
+0P"
+0O"
+0N"
+0M"
+0L"
+0K"
+0J"
+0H"
+0G"
+0F"
+0E"
+0D"
+0C"
+0B"
+0A"
+0?"
+0>"
+0="
+0<"
+0;"
+0:"
+09"
+08"
+06"
+05"
+04"
+03"
+02"
+01"
+00"
+0/"
+0-"
+0,"
+0+"
+0*"
+0)"
+0("
+0'"
+0&"
+0$"
+0#"
+0""
+0!"
+0~
+0}
+0|
+0{
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0:
+09
+08
+07
+06
+05
+04
+03
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+b0 !
+$end
+#1
+1"
+1o"
+1s"
+1t"
+1n"
+1f"
+1j"
+1k"
+1e"
+1]"
+1a"
+1b"
+1\"
+1T"
+1X"
+1Y"
+1S"
+1K"
+1O"
+1P"
+1J"
+1B"
+1F"
+1G"
+1A"
+19"
+1="
+1>"
+18"
+10"
+14"
+15"
+1/"
+1'"
+1+"
+1,"
+1&"
+1|
+1""
+1#"
+1{
+1s
+1w
+1x
+1r
+1j
+1n
+1o
+1i
+1a
+1e
+1f
+1`
+1X
+1\
+1]
+1W
+1O
+1S
+1T
+1N
+1F
+1J
+1K
+1E
+1=
+1A
+1B
+1<
+14
+18
+19
+13
+1+
+1/
+10
+1*
+b11111111111111111111 !
+b11111111111111111111 '
+1w"
+b11111111111111111111 (
+1v"
+1y"
+b1 $
+b1 &
+#2
+0"
+0o"
+0s"
+0t"
+0n"
+0f"
+0j"
+0k"
+0e"
+0]"
+0a"
+0b"
+0\"
+0T"
+0X"
+0Y"
+0S"
+0K"
+0O"
+0P"
+0J"
+0B"
+0F"
+0G"
+0A"
+09"
+0="
+0>"
+08"
+00"
+04"
+05"
+0/"
+0'"
+0+"
+0,"
+0&"
+0|
+0""
+0#"
+0{
+0s
+0w
+0x
+0r
+0j
+0n
+0o
+0i
+0a
+0e
+0f
+0`
+0X
+0\
+0]
+0W
+0O
+0S
+0T
+0N
+0F
+0J
+0K
+0E
+0=
+0A
+0B
+0<
+04
+08
+09
+03
+0+
+b1 !
+b1 '
+0/
+00
+0*
+b0 (
+0v"
+0y"
+1x"
+b0 $
+b0 &
+b1 #
+b1 %
+#3
+b0 !
+b0 '
+0w"
+1-
+16
+1?
+1Q
+1Z
+1,
+15
+1>
+1P
+1Y
+0x"
+b1101110 $
+b1101110 &
+b1101110 #
+b1101110 %
+#4
+1E
+1=
+1A
+1B
+1<
+1W
+14
+1O
+18
+19
+1S
+1T
+13
+1N
+1+
+0J
+1F
+0\
+1*
+0/
+11
+1I
+1L
+1[
+b101101 !
+b101101 '
+1w"
+b111111 (
+1v"
+1.
+06
+1H
+0Q
+0Z
+1y"
+0,
+05
+0P
+b11011 $
+b11011 &
+b1001000 #
+b1001000 %
