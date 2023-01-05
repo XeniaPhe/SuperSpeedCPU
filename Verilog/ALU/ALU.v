@@ -8,23 +8,32 @@ module ALU(
     input [19:0] i0, i1,
     input [2:0] op_select,
     input be_select,
-    output [19:0] s,
+    output reg [19:0] s,
     output cout, e);
 
     equality_comparator comp(i0, i1, be_select, e);
+    
+    wire [19:0] _add, _subt, _and, _or, _xor;
+    wire adder_cout, subtractor_bout, _cout, is_arithmetic;
 
-    wire is_arithmetic = op_select[2] ~| op_select[1];
-    wire adder_cout = 0;
-    wire subtractor_bout = 0;
+    twenty_bit_adder adder(i0, i1, _add, adder_cout);
+    twenty_bit_subtractor subtractor(i0, i1, _subt, subtractor_bout);
+    twenty_bit_bitwise_and bwand(i0, i1, _and);
+    twenty_bit_bitwise_or bwor(i0, i1, _or);
+    twenty_bit_bitwise_xor bwxor(i0, i1, _xor);
 
-    case (op_select)
-        3'b000 : begin twenty_bit_adder add(i0, i1, s, adder_cout); end
-        3'b001 : begin twenty_bit_subtractor subtract(i0, i1, s, subtractor_bout); end
-        3'b010 : begin twenty_bit_bitwise_and bwand(i0, i1, s); end
-        3'b011 : begin twenty_bit_bitwise_or bwor(i0, i1, s); end
-        3'b100 : begin twenty_bit_bitwise_xor bwxor(i0, i1, s); end
-    endcase
+    nor n(is_arithmetic, op_select[2], op_select[1]);
+    assign _cout = op_select[0] ? subtractor_bout : adder_cout;
+    and a(cout, _cout, is_arithmetic);
 
-    assign cout = ( op_select[0] == 1'b1 ? subtractor_bout : adder_cout ) & is_arithmetic;
-
+    always @(*) begin
+        case (op_select)
+            3'b000  : s <= _add; 
+            3'b001  : s <= _subt;
+            3'b010  : s <= _and;
+            3'b011  : s <= _or;
+            3'b100  : s <= _xor;
+            default : s <= 20'd0;
+        endcase
+    end
 endmodule
