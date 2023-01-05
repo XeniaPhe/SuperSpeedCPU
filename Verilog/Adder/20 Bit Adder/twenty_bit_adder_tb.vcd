@@ -1,0 +1,807 @@
+$date
+	Thu Jan 05 04:53:51 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module twenty_bit_adder_tb $end
+$var wire 20 ! s [19:0] $end
+$var wire 1 " cout $end
+$var reg 20 # i0 [19:0] $end
+$var reg 20 $ i1 [19:0] $end
+$scope module adder $end
+$var wire 20 % i0 [19:0] $end
+$var wire 20 & i1 [19:0] $end
+$var wire 20 ' s [19:0] $end
+$var wire 1 " cout $end
+$var wire 20 ( c [19:0] $end
+$scope begin genblk1[1] $end
+$var parameter 2 ) i $end
+$scope module fai $end
+$var wire 1 * cin $end
+$var wire 1 + cout $end
+$var wire 1 , i0 $end
+$var wire 1 - i1 $end
+$var wire 1 . s1 $end
+$var wire 1 / s $end
+$var wire 1 0 c2 $end
+$var wire 1 1 c1 $end
+$scope module ha1 $end
+$var wire 1 1 cout $end
+$var wire 1 , i0 $end
+$var wire 1 - i1 $end
+$var wire 1 . s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 0 cout $end
+$var wire 1 * i0 $end
+$var wire 1 . i1 $end
+$var wire 1 / s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 2 i $end
+$scope module fai $end
+$var wire 1 3 cin $end
+$var wire 1 4 cout $end
+$var wire 1 5 i0 $end
+$var wire 1 6 i1 $end
+$var wire 1 7 s1 $end
+$var wire 1 8 s $end
+$var wire 1 9 c2 $end
+$var wire 1 : c1 $end
+$scope module ha1 $end
+$var wire 1 : cout $end
+$var wire 1 5 i0 $end
+$var wire 1 6 i1 $end
+$var wire 1 7 s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 9 cout $end
+$var wire 1 3 i0 $end
+$var wire 1 7 i1 $end
+$var wire 1 8 s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$var parameter 3 ; i $end
+$scope module fai $end
+$var wire 1 < cin $end
+$var wire 1 = cout $end
+$var wire 1 > i0 $end
+$var wire 1 ? i1 $end
+$var wire 1 @ s1 $end
+$var wire 1 A s $end
+$var wire 1 B c2 $end
+$var wire 1 C c1 $end
+$scope module ha1 $end
+$var wire 1 C cout $end
+$var wire 1 > i0 $end
+$var wire 1 ? i1 $end
+$var wire 1 @ s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 B cout $end
+$var wire 1 < i0 $end
+$var wire 1 @ i1 $end
+$var wire 1 A s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$var parameter 4 D i $end
+$scope module fai $end
+$var wire 1 E cin $end
+$var wire 1 F cout $end
+$var wire 1 G i0 $end
+$var wire 1 H i1 $end
+$var wire 1 I s1 $end
+$var wire 1 J s $end
+$var wire 1 K c2 $end
+$var wire 1 L c1 $end
+$scope module ha1 $end
+$var wire 1 L cout $end
+$var wire 1 G i0 $end
+$var wire 1 H i1 $end
+$var wire 1 I s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 K cout $end
+$var wire 1 E i0 $end
+$var wire 1 I i1 $end
+$var wire 1 J s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$var parameter 4 M i $end
+$scope module fai $end
+$var wire 1 N cin $end
+$var wire 1 O cout $end
+$var wire 1 P i0 $end
+$var wire 1 Q i1 $end
+$var wire 1 R s1 $end
+$var wire 1 S s $end
+$var wire 1 T c2 $end
+$var wire 1 U c1 $end
+$scope module ha1 $end
+$var wire 1 U cout $end
+$var wire 1 P i0 $end
+$var wire 1 Q i1 $end
+$var wire 1 R s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 T cout $end
+$var wire 1 N i0 $end
+$var wire 1 R i1 $end
+$var wire 1 S s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$var parameter 4 V i $end
+$scope module fai $end
+$var wire 1 W cin $end
+$var wire 1 X cout $end
+$var wire 1 Y i0 $end
+$var wire 1 Z i1 $end
+$var wire 1 [ s1 $end
+$var wire 1 \ s $end
+$var wire 1 ] c2 $end
+$var wire 1 ^ c1 $end
+$scope module ha1 $end
+$var wire 1 ^ cout $end
+$var wire 1 Y i0 $end
+$var wire 1 Z i1 $end
+$var wire 1 [ s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 ] cout $end
+$var wire 1 W i0 $end
+$var wire 1 [ i1 $end
+$var wire 1 \ s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$var parameter 4 _ i $end
+$scope module fai $end
+$var wire 1 ` cin $end
+$var wire 1 a cout $end
+$var wire 1 b i0 $end
+$var wire 1 c i1 $end
+$var wire 1 d s1 $end
+$var wire 1 e s $end
+$var wire 1 f c2 $end
+$var wire 1 g c1 $end
+$scope module ha1 $end
+$var wire 1 g cout $end
+$var wire 1 b i0 $end
+$var wire 1 c i1 $end
+$var wire 1 d s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 f cout $end
+$var wire 1 ` i0 $end
+$var wire 1 d i1 $end
+$var wire 1 e s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[8] $end
+$var parameter 5 h i $end
+$scope module fai $end
+$var wire 1 i cin $end
+$var wire 1 j cout $end
+$var wire 1 k i0 $end
+$var wire 1 l i1 $end
+$var wire 1 m s1 $end
+$var wire 1 n s $end
+$var wire 1 o c2 $end
+$var wire 1 p c1 $end
+$scope module ha1 $end
+$var wire 1 p cout $end
+$var wire 1 k i0 $end
+$var wire 1 l i1 $end
+$var wire 1 m s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 o cout $end
+$var wire 1 i i0 $end
+$var wire 1 m i1 $end
+$var wire 1 n s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[9] $end
+$var parameter 5 q i $end
+$scope module fai $end
+$var wire 1 r cin $end
+$var wire 1 s cout $end
+$var wire 1 t i0 $end
+$var wire 1 u i1 $end
+$var wire 1 v s1 $end
+$var wire 1 w s $end
+$var wire 1 x c2 $end
+$var wire 1 y c1 $end
+$scope module ha1 $end
+$var wire 1 y cout $end
+$var wire 1 t i0 $end
+$var wire 1 u i1 $end
+$var wire 1 v s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 x cout $end
+$var wire 1 r i0 $end
+$var wire 1 v i1 $end
+$var wire 1 w s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[10] $end
+$var parameter 5 z i $end
+$scope module fai $end
+$var wire 1 { cin $end
+$var wire 1 | cout $end
+$var wire 1 } i0 $end
+$var wire 1 ~ i1 $end
+$var wire 1 !" s1 $end
+$var wire 1 "" s $end
+$var wire 1 #" c2 $end
+$var wire 1 $" c1 $end
+$scope module ha1 $end
+$var wire 1 $" cout $end
+$var wire 1 } i0 $end
+$var wire 1 ~ i1 $end
+$var wire 1 !" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 #" cout $end
+$var wire 1 { i0 $end
+$var wire 1 !" i1 $end
+$var wire 1 "" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[11] $end
+$var parameter 5 %" i $end
+$scope module fai $end
+$var wire 1 &" cin $end
+$var wire 1 '" cout $end
+$var wire 1 (" i0 $end
+$var wire 1 )" i1 $end
+$var wire 1 *" s1 $end
+$var wire 1 +" s $end
+$var wire 1 ," c2 $end
+$var wire 1 -" c1 $end
+$scope module ha1 $end
+$var wire 1 -" cout $end
+$var wire 1 (" i0 $end
+$var wire 1 )" i1 $end
+$var wire 1 *" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 ," cout $end
+$var wire 1 &" i0 $end
+$var wire 1 *" i1 $end
+$var wire 1 +" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[12] $end
+$var parameter 5 ." i $end
+$scope module fai $end
+$var wire 1 /" cin $end
+$var wire 1 0" cout $end
+$var wire 1 1" i0 $end
+$var wire 1 2" i1 $end
+$var wire 1 3" s1 $end
+$var wire 1 4" s $end
+$var wire 1 5" c2 $end
+$var wire 1 6" c1 $end
+$scope module ha1 $end
+$var wire 1 6" cout $end
+$var wire 1 1" i0 $end
+$var wire 1 2" i1 $end
+$var wire 1 3" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 5" cout $end
+$var wire 1 /" i0 $end
+$var wire 1 3" i1 $end
+$var wire 1 4" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[13] $end
+$var parameter 5 7" i $end
+$scope module fai $end
+$var wire 1 8" cin $end
+$var wire 1 9" cout $end
+$var wire 1 :" i0 $end
+$var wire 1 ;" i1 $end
+$var wire 1 <" s1 $end
+$var wire 1 =" s $end
+$var wire 1 >" c2 $end
+$var wire 1 ?" c1 $end
+$scope module ha1 $end
+$var wire 1 ?" cout $end
+$var wire 1 :" i0 $end
+$var wire 1 ;" i1 $end
+$var wire 1 <" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 >" cout $end
+$var wire 1 8" i0 $end
+$var wire 1 <" i1 $end
+$var wire 1 =" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[14] $end
+$var parameter 5 @" i $end
+$scope module fai $end
+$var wire 1 A" cin $end
+$var wire 1 B" cout $end
+$var wire 1 C" i0 $end
+$var wire 1 D" i1 $end
+$var wire 1 E" s1 $end
+$var wire 1 F" s $end
+$var wire 1 G" c2 $end
+$var wire 1 H" c1 $end
+$scope module ha1 $end
+$var wire 1 H" cout $end
+$var wire 1 C" i0 $end
+$var wire 1 D" i1 $end
+$var wire 1 E" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 G" cout $end
+$var wire 1 A" i0 $end
+$var wire 1 E" i1 $end
+$var wire 1 F" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[15] $end
+$var parameter 5 I" i $end
+$scope module fai $end
+$var wire 1 J" cin $end
+$var wire 1 K" cout $end
+$var wire 1 L" i0 $end
+$var wire 1 M" i1 $end
+$var wire 1 N" s1 $end
+$var wire 1 O" s $end
+$var wire 1 P" c2 $end
+$var wire 1 Q" c1 $end
+$scope module ha1 $end
+$var wire 1 Q" cout $end
+$var wire 1 L" i0 $end
+$var wire 1 M" i1 $end
+$var wire 1 N" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 P" cout $end
+$var wire 1 J" i0 $end
+$var wire 1 N" i1 $end
+$var wire 1 O" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[16] $end
+$var parameter 6 R" i $end
+$scope module fai $end
+$var wire 1 S" cin $end
+$var wire 1 T" cout $end
+$var wire 1 U" i0 $end
+$var wire 1 V" i1 $end
+$var wire 1 W" s1 $end
+$var wire 1 X" s $end
+$var wire 1 Y" c2 $end
+$var wire 1 Z" c1 $end
+$scope module ha1 $end
+$var wire 1 Z" cout $end
+$var wire 1 U" i0 $end
+$var wire 1 V" i1 $end
+$var wire 1 W" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 Y" cout $end
+$var wire 1 S" i0 $end
+$var wire 1 W" i1 $end
+$var wire 1 X" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[17] $end
+$var parameter 6 [" i $end
+$scope module fai $end
+$var wire 1 \" cin $end
+$var wire 1 ]" cout $end
+$var wire 1 ^" i0 $end
+$var wire 1 _" i1 $end
+$var wire 1 `" s1 $end
+$var wire 1 a" s $end
+$var wire 1 b" c2 $end
+$var wire 1 c" c1 $end
+$scope module ha1 $end
+$var wire 1 c" cout $end
+$var wire 1 ^" i0 $end
+$var wire 1 _" i1 $end
+$var wire 1 `" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 b" cout $end
+$var wire 1 \" i0 $end
+$var wire 1 `" i1 $end
+$var wire 1 a" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[18] $end
+$var parameter 6 d" i $end
+$scope module fai $end
+$var wire 1 e" cin $end
+$var wire 1 f" cout $end
+$var wire 1 g" i0 $end
+$var wire 1 h" i1 $end
+$var wire 1 i" s1 $end
+$var wire 1 j" s $end
+$var wire 1 k" c2 $end
+$var wire 1 l" c1 $end
+$scope module ha1 $end
+$var wire 1 l" cout $end
+$var wire 1 g" i0 $end
+$var wire 1 h" i1 $end
+$var wire 1 i" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 k" cout $end
+$var wire 1 e" i0 $end
+$var wire 1 i" i1 $end
+$var wire 1 j" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[19] $end
+$var parameter 6 m" i $end
+$scope module fai $end
+$var wire 1 n" cin $end
+$var wire 1 o" cout $end
+$var wire 1 p" i0 $end
+$var wire 1 q" i1 $end
+$var wire 1 r" s1 $end
+$var wire 1 s" s $end
+$var wire 1 t" c2 $end
+$var wire 1 u" c1 $end
+$scope module ha1 $end
+$var wire 1 u" cout $end
+$var wire 1 p" i0 $end
+$var wire 1 q" i1 $end
+$var wire 1 r" s $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 t" cout $end
+$var wire 1 n" i0 $end
+$var wire 1 r" i1 $end
+$var wire 1 s" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module ha $end
+$var wire 1 v" cout $end
+$var wire 1 w" i0 $end
+$var wire 1 x" i1 $end
+$var wire 1 y" s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10011 m"
+b10010 d"
+b10001 ["
+b10000 R"
+b1111 I"
+b1110 @"
+b1101 7"
+b1100 ."
+b1011 %"
+b1010 z
+b1001 q
+b1000 h
+b111 _
+b110 V
+b101 M
+b100 D
+b11 ;
+b10 2
+b1 )
+$end
+#0
+$dumpvars
+0y"
+0x"
+0w"
+0v"
+0u"
+0t"
+0s"
+0r"
+0q"
+0p"
+0o"
+0n"
+0l"
+0k"
+0j"
+0i"
+0h"
+0g"
+0f"
+0e"
+0c"
+0b"
+0a"
+0`"
+0_"
+0^"
+0]"
+0\"
+0Z"
+0Y"
+0X"
+0W"
+0V"
+0U"
+0T"
+0S"
+0Q"
+0P"
+0O"
+0N"
+0M"
+0L"
+0K"
+0J"
+0H"
+0G"
+0F"
+0E"
+0D"
+0C"
+0B"
+0A"
+0?"
+0>"
+0="
+0<"
+0;"
+0:"
+09"
+08"
+06"
+05"
+04"
+03"
+02"
+01"
+00"
+0/"
+0-"
+0,"
+0+"
+0*"
+0)"
+0("
+0'"
+0&"
+0$"
+0#"
+0""
+0!"
+0~
+0}
+0|
+0{
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0:
+09
+08
+07
+06
+05
+04
+03
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+b0 !
+$end
+#1
+b1 !
+b1 '
+1y"
+1x"
+b1 $
+b1 &
+#2
+0x"
+1w"
+b0 $
+b0 &
+b1 #
+b1 %
+#3
+1\
+1W
+1O
+1T
+1n
+1N
+1i
+1F
+1a
+18
+1A
+1K
+1f
+13
+1<
+1E
+1`
+0J
+0e
+1+
+14
+1=
+b101001101 !
+b101001101 '
+0S
+b11111110 (
+1X
+1I
+1d
+11
+1:
+1C
+1R
+1^
+1-
+16
+1?
+1H
+1Z
+1c
+1,
+15
+1>
+1P
+1Y
+b11011110 $
+b11011110 &
+b1101111 #
+b1101111 %
+#4
+0N
+08
+0A
+1w
+1""
+0F
+03
+0<
+1r
+1{
+1J
+0K
+0S
+0T
+0+
+04
+1e
+0f
+1j
+b1111101000 (
+1s
+0I
+0R
+1U
+01
+0:
+0d
+1g
+1p
+1y
+b11111010000 !
+b11111010000 '
+0y"
+0-
+06
+0H
+1Q
+1l
+1u
+0,
+05
+1b
+1k
+1t
+0w"
+b1111101000 $
+b1111101000 &
+b1111101000 #
+b1111101000 %
