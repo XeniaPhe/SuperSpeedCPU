@@ -7,7 +7,7 @@ module ram_tb;
     reg clk, str, ld;
     wire [19:0] read;
 
-    ram #(.init({20'hABCDE,{1023{20'd0}}})) mem (.addr(addr), .write(write), .clk(clk), .str(str), .ld(ld), .read(read));
+    ram #(.INIT({20'hABCDE,{1023{20'd0}}})) mem (.addr(addr), .write(write), .clk(clk), .str(str), .ld(ld), .read(read));
 
     initial begin
         clk = 0;

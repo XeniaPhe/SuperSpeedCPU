@@ -1,5 +1,5 @@
 module ram#(
-    parameter [0:20479] init = {1024{20'd0}}
+    parameter [0:20479] INIT = {1024{20'd0}}
 )(
     input [9:0] addr,
     input [19:0] write,
@@ -11,7 +11,7 @@ module ram#(
     integer i;
     initial begin
         for(i = 0; i < 1024; i = i + 1) begin
-            mem[i] = init[(20 * i) +: 20];
+            mem[i] = INIT[(20 * i) +: 20];
         end
     end
 
