@@ -1,0 +1,107 @@
+$date
+	Fri Jan 06 20:39:49 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ram_tb $end
+$var wire 20 ! read [19:0] $end
+$var reg 10 " addr [9:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ ld $end
+$var reg 1 % str $end
+$var reg 20 & write [19:0] $end
+$scope module mem $end
+$var wire 10 ' addr [9:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ ld $end
+$var wire 1 % str $end
+$var wire 20 ( write [19:0] $end
+$var reg 20 ) read [19:0] $end
+$var integer 32 * i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10000000000 *
+b0 )
+b1100101 (
+b0 '
+b1100101 &
+0%
+1$
+0#
+b0 "
+b0 !
+$end
+#10
+1%
+#15
+b1100101 !
+b1100101 )
+1#
+#20
+bx !
+bx )
+0#
+0$
+#25
+1#
+#30
+b0 !
+b0 )
+0#
+b11001010 &
+b11001010 (
+b1 "
+b1 '
+1$
+#35
+b11001010 !
+b11001010 )
+1#
+#40
+b0 !
+b0 )
+0#
+b100101111 &
+b100101111 (
+b10 "
+b10 '
+#45
+b100101111 !
+b100101111 )
+1#
+#50
+b0 !
+b0 )
+0#
+b110010100 &
+b110010100 (
+b11 "
+b11 '
+#55
+b110010100 !
+b110010100 )
+1#
+#60
+b0 !
+b0 )
+0#
+b111111001 &
+b111111001 (
+b100 "
+b100 '
+#65
+b111111001 !
+b111111001 )
+1#
+#70
+0#
