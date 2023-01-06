@@ -13,12 +13,13 @@ module ram(
         end
     end
 
-    always @(posedge clk) begin
-        if(str)
-            mem[addr] <= write;
-    end
-
     always @(*) begin
         read = ld ? mem[addr] : 20'dx;
+    end
+
+    always @(posedge clk) begin
+        if(str) begin
+            mem[addr] <= write;
+        end
     end
 endmodule
