@@ -3,16 +3,13 @@
 
 module twenty_bit_register_tb;
     reg [19:0] d;
-    reg clk, w, reset;
+    reg clk, w;
     wire [19:0] q;
 
-    twenty_bit_register regs(d, clk, w, reset, q);
+    twenty_bit_register regs(d, clk, w, q);
 
     initial begin
         clk = 0;
-        reset = 1'b1;
-        #5
-        reset = 0;
         forever #5 clk = ~clk;
     end
 

@@ -3,18 +3,14 @@
 module register_file_tb;
     reg [19:0] write;
     reg [3:0] w_select, r1_select, r2_select;
-    reg clk, w, reset;
+    reg clk, w;
     wire [19:0] read1, read2;
 
     register_file regfile(write, w_select, r1_select, r2_select,
-     clk, w, reset, read1, read2);
+     clk, w, read1, read2);
 
      initial begin
         clk = 0;
-        reset = 1;
-        #5
-
-        reset = 0;
         forever #5 clk = ~clk;
      end
 

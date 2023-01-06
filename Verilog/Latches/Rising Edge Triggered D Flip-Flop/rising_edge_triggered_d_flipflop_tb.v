@@ -2,16 +2,13 @@
 `include "Latches/Rising Edge Triggered D Flip-Flop/rising_edge_triggered_d_flipflop.v"
 
 module rising_edge_triggered_d_flipflop_tb;
-    reg d, w, clk, reset;
+    reg d, w, clk;
     wire q;
 
-    rising_edge_triggered_d_flipflop flipflop(d, w, clk, reset, q);
+    rising_edge_triggered_d_flipflop flipflop(d, w, clk, q);
 
     initial begin
         clk = 0;
-        reset = 1;
-        #1
-        reset = 0;
         forever #1 clk = ~clk;
     end
 
@@ -34,10 +31,10 @@ module rising_edge_triggered_d_flipflop_tb;
         d = 0; w = 1;
         #10;
 
-        d = 1; w = 1; reset = 1;
+        d = 1; w = 1;
         #10;
 
-        d = 0; w = 0; reset = 0;
+        d = 0; w = 0;
         #10;
 
         d = 0; w = 0;
@@ -46,10 +43,10 @@ module rising_edge_triggered_d_flipflop_tb;
         d = 1; w = 1;
         #10;
 
-        d = 1; w = 1; reset = 1;
+        d = 1; w = 1;
         #10;
 
-        d = 1; w = 1; reset = 0;
+        d = 1; w = 1;
         #10
 
         $finish;

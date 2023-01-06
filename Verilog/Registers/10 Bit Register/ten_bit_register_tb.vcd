@@ -1,5 +1,5 @@
 $date
-	Thu Jan 05 22:55:00 2023
+	Fri Jan 06 22:22:02 2023
 $end
 $version
 	Icarus Verilog
@@ -11,112 +11,100 @@ $scope module ten_bit_register_tb $end
 $var wire 10 ! q [9:0] $end
 $var reg 1 " clk $end
 $var reg 10 # d [9:0] $end
-$var reg 1 $ reset $end
-$var reg 1 % w $end
+$var reg 1 $ w $end
 $scope module regs $end
 $var wire 1 " clk $end
-$var wire 10 & d [9:0] $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var wire 10 ' q [9:0] $end
+$var wire 10 % d [9:0] $end
+$var wire 1 $ w $end
+$var wire 10 & q [9:0] $end
 $scope begin genblk1[0] $end
-$var parameter 2 ( i $end
+$var parameter 2 ' i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 ) d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 * q $end
+$var wire 1 ( d $end
+$var wire 1 $ w $end
+$var reg 1 ) q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[1] $end
-$var parameter 2 + i $end
+$var parameter 2 * i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 , d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 - q $end
+$var wire 1 + d $end
+$var wire 1 $ w $end
+$var reg 1 , q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[2] $end
-$var parameter 3 . i $end
+$var parameter 3 - i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 / d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 0 q $end
+$var wire 1 . d $end
+$var wire 1 $ w $end
+$var reg 1 / q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[3] $end
-$var parameter 3 1 i $end
+$var parameter 3 0 i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 2 d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 3 q $end
+$var wire 1 1 d $end
+$var wire 1 $ w $end
+$var reg 1 2 q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[4] $end
-$var parameter 4 4 i $end
+$var parameter 4 3 i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 5 d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 6 q $end
+$var wire 1 4 d $end
+$var wire 1 $ w $end
+$var reg 1 5 q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[5] $end
-$var parameter 4 7 i $end
+$var parameter 4 6 i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 8 d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 9 q $end
+$var wire 1 7 d $end
+$var wire 1 $ w $end
+$var reg 1 8 q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[6] $end
-$var parameter 4 : i $end
+$var parameter 4 9 i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 ; d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 < q $end
+$var wire 1 : d $end
+$var wire 1 $ w $end
+$var reg 1 ; q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[7] $end
-$var parameter 4 = i $end
+$var parameter 4 < i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 > d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 ? q $end
+$var wire 1 = d $end
+$var wire 1 $ w $end
+$var reg 1 > q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[8] $end
-$var parameter 5 @ i $end
+$var parameter 5 ? i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 A d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 B q $end
+$var wire 1 @ d $end
+$var wire 1 $ w $end
+$var reg 1 A q $end
 $upscope $end
 $upscope $end
 $scope begin genblk1[9] $end
-$var parameter 5 C i $end
+$var parameter 5 B i $end
 $scope module flipflopi $end
 $var wire 1 " clk $end
-$var wire 1 D d $end
-$var wire 1 $ reset $end
-$var wire 1 % w $end
-$var reg 1 E q $end
+$var wire 1 C d $end
+$var wire 1 $ w $end
+$var reg 1 D q $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -124,240 +112,239 @@ $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b1001 C
-b1000 @
-b111 =
-b110 :
-b101 7
-b100 4
-b11 1
-b10 .
-b1 +
-b0 (
+b1001 B
+b1000 ?
+b111 <
+b110 9
+b101 6
+b100 3
+b11 0
+b10 -
+b1 *
+b0 '
 $end
 #0
 $dumpvars
-0E
 0D
-0B
+0C
 0A
-0?
+0@
 0>
-0<
+0=
 0;
-09
-18
-06
+0:
+08
+17
 05
-03
-12
-00
-1/
-0-
+04
+02
+11
+0/
+1.
 0,
-0*
-1)
-b0 '
-b101101 &
-1%
+0+
+0)
+1(
+b0 &
+b101101 %
 1$
 b101101 #
 0"
 b0 !
 $end
 #1
-19
-13
-10
+1)
+1/
+12
 b101101 !
-b101101 '
-1*
-0$
+b101101 &
+18
+1"
 #2
-1"
+0"
 #3
-0"
+1"
 #4
-1"
+0"
 #5
-0"
+1"
 #6
-1"
+0"
 #7
-0"
+1"
 #8
-1"
+0"
 #9
-0"
+1"
 #10
-0*
-1-
-03
-b110110 !
-b110110 '
-16
-0)
-1,
-02
-15
-1"
+0(
+1+
+01
+14
+0"
 b110110 #
-b110110 &
+b110110 %
 #11
-0"
+15
+02
+1,
+b110110 !
+b110110 &
+0)
+1"
 #12
-1"
+0"
 #13
-0"
+1"
 #14
-1"
+0"
 #15
-0"
+1"
 #16
-1"
+0"
 #17
-0"
+1"
 #18
-1"
+0"
 #19
-0"
+1"
 #20
-0,
-05
-1;
-1"
-0%
+0+
+04
+1:
+0"
+0$
 b1100100 #
-b1100100 &
+b1100100 %
 #21
-0"
+1"
 #22
-1"
+0"
 #23
-0"
+1"
 #24
-1"
+0"
 #25
-0"
+1"
 #26
-1"
+0"
 #27
-0"
-#28
 1"
-#29
+#28
 0"
+#29
+1"
 #30
-1*
-0-
-06
+1(
+0"
+1$
+b1100101 #
+b1100101 %
+#31
+1;
+05
+0,
 b1100101 !
-b1100101 '
-1<
+b1100101 &
 1)
 1"
-1%
-b1100101 #
-b1100101 &
-#31
-0"
 #32
-1"
+0"
 #33
-0"
+1"
 #34
-1"
+0"
 #35
-0"
+1"
 #36
-1"
+0"
 #37
-0"
-#38
 1"
-#39
+#38
 0"
+#39
+1"
 #40
-13
-b1101001 !
-b1101001 '
-00
+0.
+11
+0"
+b1101001 #
+b1101001 %
+#41
 0/
+b1101001 !
+b1101001 &
 12
 1"
-b1101001 #
-b1101001 &
-#41
-0"
 #42
-1"
+0"
 #43
-0"
+1"
 #44
-1"
+0"
 #45
-0"
+1"
 #46
-1"
+0"
 #47
-0"
-#48
 1"
-#49
+#48
 0"
+#49
+1"
 #50
+0(
+01
+07
+0:
+0"
+0$
+b0 #
+b0 %
+#51
+1"
+#52
+0"
+#53
+1"
+#54
+0"
+#55
+1"
+#56
+0"
+#57
+1"
+#58
+0"
+#59
+1"
+#60
+0"
+1$
+#61
 0)
 02
 08
+b0 !
+b0 &
 0;
 1"
-0%
-b0 #
-b0 &
-#51
-0"
-#52
-1"
-#53
-0"
-#54
-1"
-#55
-0"
-#56
-1"
-#57
-0"
-#58
-1"
-#59
-0"
-#60
-0<
-09
-03
-b0 !
-b0 '
-0*
-1"
-1%
-#61
-0"
 #62
-1"
+0"
 #63
-0"
+1"
 #64
-1"
+0"
 #65
-0"
+1"
 #66
-1"
+0"
 #67
-0"
+1"
 #68
-1"
-#69
 0"
-#70
+#69
 1"
+#70
+0"

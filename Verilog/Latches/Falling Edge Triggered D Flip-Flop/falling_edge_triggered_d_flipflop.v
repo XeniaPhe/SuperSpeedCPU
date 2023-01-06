@@ -1,12 +1,13 @@
 module falling_edge_triggered_d_flipflop(
-    input d, w, clk, reset,
+    input d, w, clk,
     output reg q);
 
-    always @(negedge clk or reset) begin
-        if(reset & ~clk) begin
-            q <= 0;
-        end else if(w) begin
+    initial begin
+        q = 0;
+    end
+
+    always @(negedge clk) begin
+        if(w)
             q <= d;
-        end
     end
 endmodule

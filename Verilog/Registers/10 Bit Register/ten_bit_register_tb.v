@@ -3,16 +3,13 @@
 
 module ten_bit_register_tb;
     reg [9:0] d;
-    reg clk, w, reset;
+    reg clk, w;
     wire [9:0] q;
 
-    ten_bit_register regs(d, clk, w, reset, q);
+    ten_bit_register regs(d, clk, w, q);
 
     initial begin
         clk = 0;
-        reset = 1'b1;
-        #1
-        reset = 0;
         forever #1 clk = ~clk;
     end
 

@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-`include "Memory/ram.v"
+`include "Memory/RAM/ram.v"
 
 module ram_tb;
     reg [9:0] addr;
@@ -41,6 +41,13 @@ module ram_tb;
         addr = 4; write = 505;
         #10
 
+        addr = 3;
+        str = 0;
+        #10
+
+        addr = 2;
+        #10
+        
         $finish;
     end
 endmodule
