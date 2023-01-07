@@ -6,7 +6,7 @@ module instruction_decoder(
     output reg [19:0] imm,
     output reg [9:0] addr);
 
-    wire [4:0] opcode = instruction[0+:5];
+    wire [4:0] opcode = instruction[19-:5];
     wire [9:0] zero_nine = instruction[0+:10];
     wire [6:0] zero_six = instruction[0+:7];
 
@@ -23,7 +23,6 @@ module instruction_decoder(
     reg [2:0] sr1_select;
 
     always @(instruction) begin
-        dr_select = 2'd0;
         alu_select = 3'd0;
         alu = 0;
         alu_not_imm = 0;
@@ -36,11 +35,6 @@ module instruction_decoder(
         be = 0;
         be_select = 0;
         halt = 0;
-        dr = 4'd0;
-        sr1 = 4'd0;
-        sr2 = 4'd0;
-        imm = 20'd0;
-        addr = 10'd0;
 
         if(opcode == 0) begin
             halt = 1;
@@ -62,7 +56,10 @@ module instruction_decoder(
                 5'd13 : push = 1;
                 5'd14 : pop = 1;
                 5'd15 : jump = 1;
-                default : be = 1;
+                default : begin
+                    be = 1;
+                    be_select = opcode == 5'd16;
+                end
             endcase
         end
 
@@ -100,5 +97,4 @@ module instruction_decoder(
 
         imm = {{13{zero_six[6]}}, zero_six};
     end
-
 endmodule
