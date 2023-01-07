@@ -21,7 +21,6 @@ module instruction_decoder(
 
     reg [1:0] dr_select;
     reg [2:0] sr1_select;
-    reg sr2_select;
 
     always @(instruction) begin
         dr_select = 2'd0;
@@ -45,7 +44,7 @@ module instruction_decoder(
 
         if(opcode == 0) begin
             halt = 1;
-        end else if (opcode >= 0 && opcode <= 10) begin
+        end else if (opcode > 0 && opcode < 11) begin
             alu = 1;
 
             if(opcode % 2 == 0)
@@ -54,10 +53,52 @@ module instruction_decoder(
                 alu_not_imm = 1;
 
             alu_select[2] = opcode > 8;
-            alu_select[1] = (opcode < 8 && opcode > 4);
+            alu_select[1] = (opcode > 4 && opcode < 9);
             alu_select[0] = (opcode == 3 || opcode == 4 || opcode == 7 || opcode == 8);
-        end else begin
+        end else if (opcode > 10 && opcode < 18) begin
+            case(opcode)
+                5'd11 : ld = 1;
+                5'd12 : st = 1;
+                5'd13 : push = 1;
+                5'd14 : pop = 1;
+                5'd15 : jump = 1;
+                default : be = 1;
+            endcase
         end
+
+        dr_select[0] = ld | pop;
+        dr_select[1] = pop | alu_not_imm;
+
+        sr1_select[0] = st | alu_not_imm;
+        sr1_select[1] = alu;
+        sr1_select[2] = push;
+
+        case(dr_select)
+            2'd0 : dr = eleven_fourteen;
+            2'd1 : dr = ten_thirteen;
+            2'd2 : dr = eight_eleven;
+            2'd3 : dr = zero_three;
+        endcase
+
+        case(sr1_select)
+            3'd0 : sr1 = eleven_fourteen;
+            3'd1 : sr1 = ten_thirteen;
+            3'd2 : sr1 = seven_ten;
+            3'd3 : sr1 = four_seven;
+            3'd4 : sr1 = zero_three;
+        endcase
+
+        if(alu_not_imm)
+            sr2 = zero_three;
+        else
+            sr2 = seven_ten;
+
+        if(be)
+            addr = {3'b000, zero_six};
+        else
+            addr = zero_nine;
+
+        imm = {{13{zero_six[6]}}, zero_six};
     end
 
 endmodule
