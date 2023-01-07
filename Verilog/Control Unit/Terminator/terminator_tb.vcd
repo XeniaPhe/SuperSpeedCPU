@@ -1,0 +1,502 @@
+$date
+	Sun Jan 08 00:08:28 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module terminator_tb $end
+$var wire 1 ! halted_4 $end
+$var wire 1 " halted_3 $end
+$var wire 1 # halted_2 $end
+$var wire 1 $ halted_1 $end
+$var reg 1 % clk $end
+$var reg 1 & decode $end
+$var reg 1 ' halt_instruction $end
+$var reg 1 ( instruction_end $end
+$var reg 1 ) pc_overflow $end
+$var reg 1 * stack_overflow $end
+$scope module test_all $end
+$var wire 1 % clk $end
+$var wire 1 & decode $end
+$var wire 1 + halt $end
+$var wire 1 ' halt_instruction $end
+$var wire 1 , halt_instruction1 $end
+$var wire 1 ! halted $end
+$var wire 1 ( instruction_end $end
+$var wire 1 ) pc_overflow $end
+$var wire 1 - pc_overflowed1 $end
+$var wire 1 * stack_overflow $end
+$var wire 1 . pc_overflowed2 $end
+$var wire 1 / pc_overflowed $end
+$var wire 1 0 cpu_started $end
+$var wire 1 1 _halted $end
+$scope module delay $end
+$var wire 1 - clk $end
+$var wire 1 2 d $end
+$var wire 1 3 w $end
+$var reg 1 . q $end
+$var reg 1 4 reset $end
+$upscope $end
+$scope module pc_overflow_tracker $end
+$var wire 1 % clk $end
+$var wire 1 ) d $end
+$var wire 1 ) w $end
+$var reg 1 / q $end
+$upscope $end
+$scope module remember_halt $end
+$var wire 1 % clk $end
+$var wire 1 + d $end
+$var wire 1 + w $end
+$var reg 1 1 q $end
+$upscope $end
+$scope module start_tracker $end
+$var wire 1 % clk $end
+$var wire 1 & d $end
+$var wire 1 & w $end
+$var reg 1 0 q $end
+$upscope $end
+$upscope $end
+$scope module test_halt_instruction $end
+$var wire 1 % clk $end
+$var wire 1 & decode $end
+$var wire 1 5 halt $end
+$var wire 1 ' halt_instruction $end
+$var wire 1 6 halt_instruction1 $end
+$var wire 1 $ halted $end
+$var wire 1 7 instruction_end $end
+$var wire 1 8 pc_overflow $end
+$var wire 1 9 pc_overflowed1 $end
+$var wire 1 : stack_overflow $end
+$var wire 1 ; pc_overflowed2 $end
+$var wire 1 < pc_overflowed $end
+$var wire 1 = cpu_started $end
+$var wire 1 > _halted $end
+$scope module delay $end
+$var wire 1 9 clk $end
+$var wire 1 ? d $end
+$var wire 1 @ w $end
+$var reg 1 ; q $end
+$var reg 1 A reset $end
+$upscope $end
+$scope module pc_overflow_tracker $end
+$var wire 1 % clk $end
+$var wire 1 8 d $end
+$var wire 1 8 w $end
+$var reg 1 < q $end
+$upscope $end
+$scope module remember_halt $end
+$var wire 1 % clk $end
+$var wire 1 5 d $end
+$var wire 1 5 w $end
+$var reg 1 > q $end
+$upscope $end
+$scope module start_tracker $end
+$var wire 1 % clk $end
+$var wire 1 & d $end
+$var wire 1 & w $end
+$var reg 1 = q $end
+$upscope $end
+$upscope $end
+$scope module test_pc_overflow $end
+$var wire 1 % clk $end
+$var wire 1 B decode $end
+$var wire 1 C halt $end
+$var wire 1 D halt_instruction $end
+$var wire 1 E halt_instruction1 $end
+$var wire 1 " halted $end
+$var wire 1 ( instruction_end $end
+$var wire 1 ) pc_overflow $end
+$var wire 1 F pc_overflowed1 $end
+$var wire 1 G stack_overflow $end
+$var wire 1 H pc_overflowed2 $end
+$var wire 1 I pc_overflowed $end
+$var wire 1 J cpu_started $end
+$var wire 1 K _halted $end
+$scope module delay $end
+$var wire 1 F clk $end
+$var wire 1 L d $end
+$var wire 1 M w $end
+$var reg 1 H q $end
+$var reg 1 N reset $end
+$upscope $end
+$scope module pc_overflow_tracker $end
+$var wire 1 % clk $end
+$var wire 1 ) d $end
+$var wire 1 ) w $end
+$var reg 1 I q $end
+$upscope $end
+$scope module remember_halt $end
+$var wire 1 % clk $end
+$var wire 1 C d $end
+$var wire 1 C w $end
+$var reg 1 K q $end
+$upscope $end
+$scope module start_tracker $end
+$var wire 1 % clk $end
+$var wire 1 B d $end
+$var wire 1 B w $end
+$var reg 1 J q $end
+$upscope $end
+$upscope $end
+$scope module test_stack_overflow $end
+$var wire 1 % clk $end
+$var wire 1 O decode $end
+$var wire 1 P halt $end
+$var wire 1 Q halt_instruction $end
+$var wire 1 R halt_instruction1 $end
+$var wire 1 # halted $end
+$var wire 1 S instruction_end $end
+$var wire 1 T pc_overflow $end
+$var wire 1 U pc_overflowed1 $end
+$var wire 1 * stack_overflow $end
+$var wire 1 V pc_overflowed2 $end
+$var wire 1 W pc_overflowed $end
+$var wire 1 X cpu_started $end
+$var wire 1 Y _halted $end
+$scope module delay $end
+$var wire 1 U clk $end
+$var wire 1 Z d $end
+$var wire 1 [ w $end
+$var reg 1 V q $end
+$var reg 1 \ reset $end
+$upscope $end
+$scope module pc_overflow_tracker $end
+$var wire 1 % clk $end
+$var wire 1 T d $end
+$var wire 1 T w $end
+$var reg 1 W q $end
+$upscope $end
+$scope module remember_halt $end
+$var wire 1 % clk $end
+$var wire 1 P d $end
+$var wire 1 P w $end
+$var reg 1 Y q $end
+$upscope $end
+$scope module start_tracker $end
+$var wire 1 % clk $end
+$var wire 1 O d $end
+$var wire 1 O w $end
+$var reg 1 X q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0\
+1[
+1Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+1M
+1L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+1@
+1?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+13
+12
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#1
+1%
+14
+1N
+1\
+1A
+#2
+0%
+#3
+1%
+#4
+0%
+#5
+1%
+#6
+0%
+#7
+1%
+#8
+0%
+#9
+1%
+#10
+0%
+1'
+#11
+1%
+#12
+0%
+#13
+1%
+#14
+0%
+#15
+10
+1=
+1%
+1&
+0'
+#16
+0%
+#17
+1%
+#18
+0%
+#19
+1%
+#20
+1!
+1$
+1+
+15
+1,
+16
+0%
+1'
+0&
+#21
+1>
+11
+1%
+#22
+0%
+#23
+1%
+#24
+0%
+#25
+1%
+#26
+0%
+#27
+1%
+#28
+0%
+#29
+1%
+#30
+0+
+05
+0,
+06
+0%
+0'
+#31
+1%
+#32
+0%
+#33
+1%
+#34
+0%
+#35
+1%
+#36
+0%
+#37
+1%
+#38
+0%
+#39
+1%
+#40
+1#
+1+
+1P
+0%
+1*
+#41
+1Y
+1%
+#42
+0%
+#43
+1%
+#44
+0%
+#45
+1%
+#46
+0%
+#47
+1%
+#48
+0%
+#49
+1%
+#50
+0+
+0P
+0%
+0*
+#51
+1%
+#52
+0%
+#53
+1%
+#54
+0%
+#55
+1%
+#56
+0%
+#57
+1%
+#58
+0%
+#59
+1%
+#60
+0%
+1(
+#61
+1%
+#62
+0%
+#63
+1%
+#64
+0%
+#65
+1I
+1/
+1%
+1)
+0(
+#66
+0%
+#67
+1%
+#68
+0%
+#69
+1%
+#70
+0%
+0)
+#71
+1%
+#72
+0%
+#73
+1%
+#74
+0%
+#75
+1%
+#76
+0%
+#77
+1%
+#78
+0%
+#79
+1%
+#80
+1-
+1F
+0%
+1(
+#81
+1%
+#82
+0%
+#83
+1%
+#84
+0%
+#85
+1%
+#86
+0%
+#87
+1%
+#88
+0%
+#89
+1%
+#90
+1"
+1+
+1C
+1.
+1H
+0-
+0F
+0%
+0(
+#91
+1K
+1%
+#92
+0%
+#93
+1%
+#94
+0%
+#95
+1%
+#96
+0%
+#97
+1%
+#98
+0%
+#99
+1%
+#100
+0%
