@@ -1,4 +1,6 @@
+`ifndef RETDFF
 `include "Latches/Rising Edge Triggered D Flip-Flop/rising_edge_triggered_d_flipflop.v"
+`endif
 `include "Latches/Falling Edge Triggered D Flip-Flop/falling_edge_triggered_d_flipflop.v"
 
 module terminator(

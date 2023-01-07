@@ -1,3 +1,5 @@
+`define RETDFF
+
 module rising_edge_triggered_d_flipflop(
     input d, w, clk,
     output reg q);

@@ -1,4 +1,6 @@
+`ifndef RETDFF
 `include "Latches/Rising Edge Triggered D Flip-Flop/rising_edge_triggered_d_flipflop.v"
+`endif
 
 module ten_bit_register#(
     parameter [9:0] INIT = 10'd0

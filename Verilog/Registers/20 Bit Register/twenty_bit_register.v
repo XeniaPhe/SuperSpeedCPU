@@ -1,4 +1,6 @@
+`ifndef RETDFF
 `include "Latches/Rising Edge Triggered D Flip-Flop/rising_edge_triggered_d_flipflop.v"
+`endif
 
 module twenty_bit_register(
     input [19:0] d,

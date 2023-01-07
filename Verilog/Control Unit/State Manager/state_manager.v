@@ -1,4 +1,6 @@
+`ifndef RETDFF
 `include "Latches/Rising Edge Triggered D Flip-Flop/rising_edge_triggered_d_flipflop.v"
+`endif
 `include "Control Unit/Next State/next_state.v"
 
 module state_manager(
