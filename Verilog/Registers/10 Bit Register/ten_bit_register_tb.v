@@ -6,7 +6,7 @@ module ten_bit_register_tb;
     reg clk, w;
     wire [9:0] q;
 
-    ten_bit_register regs(d, clk, w, q);
+    ten_bit_register #(.INIT(10'b1111100000)) regs(.d(d), .clk(clk), .w(w), .q(q));
 
     initial begin
         clk = 0;

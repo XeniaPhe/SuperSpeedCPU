@@ -1,15 +1,18 @@
 `include "Latches/Rising Edge Triggered D Flip-Flop/rising_edge_triggered_d_flipflop.v"
 
-module ten_bit_register(
+module ten_bit_register#(
+    parameter [9:0] INIT = 10'd0
+)(
     input [9:0] d,
     input clk, w,
-    output [9:0] q);
+    output reg [9:0] q);
 
-    genvar i;
+    initial begin
+        q = INIT;
+    end
 
-    generate
-        for(i = 0; i < 10; i = i + 1) begin
-            rising_edge_triggered_d_flipflop flipflopi(d[i], w, clk, q[i]);
-        end
-    endgenerate
+    always @(posedge clk) begin
+        if(w)
+            q <= d;
+    end
 endmodule
