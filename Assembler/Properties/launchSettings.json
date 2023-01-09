@@ -2,7 +2,7 @@
   "profiles": {
     "SSCPU": {
       "commandName": "Project",
-      "commandLineArgs": "input.txt\r\noutput.txt\r\nmemoryimage"
+      "commandLineArgs": "input.txt\r\noutput.txt\r\nlogisim_memory_image\r\nverilog_memory_image"
     }
   }
 }
